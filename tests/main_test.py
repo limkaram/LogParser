@@ -3,13 +3,13 @@ from pprint import pprint
 import logging
 import logging.config
 import pandas as pd
+import numpy as np
 import yaml
 import os
 import glob
 import math
 from collections import OrderedDict
 
-DATA_PATH = os.path.join('..', 'data', 'general.log-20210328.gz')
 LOGGER_CONFIG_PATH = os.path.join('..', 'conf', 'logger.yaml')
 DBLOG_CONFIG_PATH = os.path.join('..', 'conf', 'dblog.yaml')
 
@@ -18,8 +18,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 # pd.set_option('display.max_colwidth', None)
 
-
 # TODO: logging 적용
+
 
 class Main:
     def __init__(self):
@@ -74,6 +74,7 @@ class Main:
         print(f'std deviation : {standard_deviation}\n')
 
     def dblog_parsing(self, end_line):
+        data_path = os.path.join('..', 'data', 'general.log-20210328.gz')
         self.logger.info('mariaDB log parsing start')
         controller = MariaDBlogParser.Controller()
         dblog_config: dict = yaml.load(open(DBLOG_CONFIG_PATH), Loader=yaml.FullLoader)
@@ -81,7 +82,7 @@ class Main:
         record: OrderedDict = OrderedDict()
         continuous_append_thread_id: str = str()
 
-        for line_num, text in enumerate(controller.gzip_readline(DATA_PATH)):
+        for line_num, text in enumerate(controller.gzip_readline(data_path)):
             try:
                 if line_num == end_line:
                     break

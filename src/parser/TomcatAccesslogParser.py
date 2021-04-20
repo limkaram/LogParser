@@ -21,15 +21,6 @@ class Controller:
             for line in f.readlines():
                 yield line
 
-    # @staticmethod
-    # def get_ipaddress(text: str) -> str or None:
-    #     ip_format_search = re.search(r'([0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3})', text)
-    #
-    #     if ip_format_search is None:
-    #         return None
-    #
-    #     return ip_format_search.group(1)
-
     @staticmethod
     def _parse_useragent_string(user_agent_string: str):
         return parse(user_agent_string)
