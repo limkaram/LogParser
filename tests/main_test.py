@@ -1,5 +1,4 @@
 from src.parser import MariaDBlogParser, TomcatAccesslogParser
-from src.user_agents import parse
 from pprint import pprint
 import logging
 import logging.config
@@ -8,7 +7,7 @@ import yaml
 import os
 import glob
 import math
-from collections import OrderedDict, deque
+from collections import OrderedDict
 
 DATA_PATH = os.path.join('..', 'data', 'general.log-20210328.gz')
 LOGGER_CONFIG_PATH = os.path.join('..', 'conf', 'logger.yaml')
@@ -20,7 +19,7 @@ pd.set_option('display.width', None)
 # pd.set_option('display.max_colwidth', None)
 
 
-# TODO: 리팩토링, controller 객체지향화, logging 적용, Pandas DataFrame화, Pyspark 활용 DB화
+# TODO: logging 적용
 
 class Main:
     def __init__(self):
@@ -35,7 +34,7 @@ class Main:
         ip_count: OrderedDict = OrderedDict()
 
         for dirname in dirs:
-            print(f'{dirname} start')
+            print(f'{dirname} parsing start')
             filepath: str = glob.glob(os.path.join(ROOT_PATH, 'data', dirname, '*.log'))[0]
             parsed_info: list = []
             controller = TomcatAccesslogParser.Controller()
@@ -53,22 +52,22 @@ class Main:
                 continue
 
             df = pd.DataFrame(parsed_info)
+            print(df.head())
+            print(df.info())
+            print(f'os : {df["os"].unique()}')
+            print(f'os version : {df["os_version"].unique()}')
+            print('')
+            print(f'browser : {df["browser"].unique()}')
+            print(f'browser_version : {df["browser_version"].unique()}')
+            print('')
+            print(f'device : {df["device"].unique()}')
+            print(f'device brand : {df["device_brand"].unique()}')
+            print(f'device model : {df["device_model"].unique()}')
+            print('')
+
             ip_count[dirname] = len(df['ip'].unique())
 
-            # user agent parser module test
-            for idx, ua_text in enumerate(df['user_agent'].values):
-                if idx == 100:
-                    break
-                print(ua_text)
-                a = parse(ua_text)
-                print(f'raw : {a}')
-                print(f'os : {a.os}')
-                print(f'device : {a.device}')
-                print(f'ua_string : {a.ua_string}')
-                print(f'browser : {a.browser}')
-                print('')
-
-        print('Consider only the number of unique IP address')
+        print('==========Consider only the number of unique IP address==========')
         mean = sum(ip_count.values()) / len(ip_count)
         standard_deviation = math.sqrt(sum([(i - mean) ** 2 for i in ip_count.values()]) / len(ip_count))
         print(f'mean : {mean}')
