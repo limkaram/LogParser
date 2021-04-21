@@ -10,8 +10,10 @@ import glob
 import math
 from collections import OrderedDict
 
-LOGGER_CONFIG_PATH = os.path.join('..', 'conf', 'logger.yaml')
-DBLOG_CONFIG_PATH = os.path.join('..', 'conf', 'dblog.yaml')
+ROOT_PATH: str = os.path.abspath('..')
+LOGGER_CONFIG_PATH: str = os.path.join(ROOT_PATH, 'conf', 'logger.yaml')
+ACCESSLOG_CONFIG_PATH: str = os.path.join(ROOT_PATH, 'conf', 'accesslog.yaml')
+DBLOG_CONFIG_PATH: str = os.path.join(ROOT_PATH, 'conf', 'dblog.yaml')
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -29,13 +31,13 @@ class Main:
 
     def accesslog_parsing(self):
         self.logger.info('access log parsing start')
-        ROOT_PATH = os.path.abspath('..')
-        dirs = os.listdir(os.path.join(ROOT_PATH, 'data'))
+        accesslog_config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
+        data_path: str = accesslog_config['log_filepath']
         ip_count: OrderedDict = OrderedDict()
 
-        for dirname in dirs:
+        for dirname in os.listdir(data_path):
             print(f'{dirname} parsing start')
-            filepath: str = glob.glob(os.path.join(ROOT_PATH, 'data', dirname, '*.log'))[0]
+            filepath: str = glob.glob(os.path.join(data_path, dirname, '*access*'))[0]
             parsed_info: list = []
             controller = TomcatAccesslogParser.Controller()
 
@@ -74,64 +76,67 @@ class Main:
         print(f'std deviation : {standard_deviation}\n')
 
     def dblog_parsing(self, end_line):
-        data_path = os.path.join('..', 'data', 'general.log-20210328.gz')
         self.logger.info('mariaDB log parsing start')
-        controller = MariaDBlogParser.Controller()
         dblog_config: dict = yaml.load(open(DBLOG_CONFIG_PATH), Loader=yaml.FullLoader)
+        data_path: str = dblog_config['log_filepath']
+        controller = MariaDBlogParser.Controller()
         result: list = []
         record: OrderedDict = OrderedDict()
         continuous_append_thread_id: str = str()
 
-        for line_num, text in enumerate(controller.gzip_readline(data_path)):
-            try:
-                if line_num == end_line:
-                    break
+        for dirname in os.listdir(data_path):
+            print(f'{dirname} parsing start')
+            filepath: str = glob.glob(os.path.join(data_path, dirname, '*general*'))[0]
 
-                if (len(text) == 0) or (line_num < dblog_config['start_headline']):
-                    continue
+            for line_num, text in enumerate(controller.gzip_readline(filepath)):
+                try:
+                    if line_num == end_line:
+                        break
 
-                time: str = controller.get_time(text)
-                thread_id: str = controller.get_id(text)
-                command: str = controller.get_command(text)
+                    if (len(text) == 0) or (line_num < dblog_config['start_headline']):
+                        continue
 
-                if time:
-                    if thread_id in record.keys():
-                        result.append(record.pop(thread_id))
+                    time: str = controller.get_time(text)
+                    thread_id: str = controller.get_id(text)
+                    command: str = controller.get_command(text)
 
-                    argument = text.replace(time, '').replace(thread_id, '').replace(command, '').strip()
-                    record[thread_id] = {'time': time,
-                                         'thread_id': thread_id,
-                                         'command': command,
-                                         'argument': argument}
-                else:
-                    if thread_id:
+                    if time:
                         if thread_id in record.keys():
-                            continuous_append_thread_id = thread_id
-                            argument = text.replace(thread_id, '').replace(command, '').strip()
-                            record[thread_id]['argument'] += '\n' + argument
-                        else:
-                            # TODO: 최초 할당받은 스레드 없이 등장하는 라인 있음(대체로 할당 받을시 timestamp가 있음)
-                            argument = text.replace(thread_id, '').replace(command, '').strip()
-                            record[thread_id] = {'time': '-',
-                                                 'thread_id': thread_id,
-                                                 'command': command,
-                                                 'argument': argument}
-                    else:
-                        record[continuous_append_thread_id]['argument'] += '\n' + text.strip()
-            except KeyError as e:
-                print(f'error line : {line_num} :: {e}')
+                            result.append(record.pop(thread_id))
 
-        for key, value in record.items():
-            result.append(value)
-        result.sort(key=lambda x: x['time'], reverse=False)
-        df = pd.DataFrame(result, columns=['time', 'thread_id', 'command', 'argument'])
-        print(df.head(50))
-        print(df.info())
-        pprint(df[df['time'] == '-'].values)
-        # controller.df2file(df, os.path.join('..', 'outputs', 'result_20210414.csv'))
+                        argument = text.replace(time, '').replace(thread_id, '').replace(command, '').strip()
+                        record[thread_id] = {'time': time,
+                                             'thread_id': thread_id,
+                                             'command': command,
+                                             'argument': argument}
+                    else:
+                        if thread_id:
+                            if thread_id in record.keys():
+                                continuous_append_thread_id = thread_id
+                                argument = text.replace(thread_id, '').replace(command, '').strip()
+                                record[thread_id]['argument'] += '\n' + argument
+                            else:
+                                # TODO: 최초 할당받은 스레드 없이 등장하는 라인 있음(대체로 할당 받을시 timestamp가 있음)
+                                argument = text.replace(thread_id, '').replace(command, '').strip()
+                                record[thread_id] = {'time': '-',
+                                                     'thread_id': thread_id,
+                                                     'command': command,
+                                                     'argument': argument}
+                        else:
+                            record[continuous_append_thread_id]['argument'] += '\n' + text.strip()
+                except KeyError as e:
+                    print(f'error line : {line_num} :: {e}')
+
+            for key, value in record.items():
+                result.append(value)
+            result.sort(key=lambda x: x['time'], reverse=False)
+            df = pd.DataFrame(result, columns=['time', 'thread_id', 'command', 'argument'])
+            print(df.head(50))
+            print(df.info())
+            # controller.df2file(df, os.path.join('..', 'outputs', 'result_20210414.csv'))
 
 
 if __name__ == '__main__':
     main = Main()
-    # main.dblog_parsing(end_line=380000)
-    main.accesslog_parsing()
+    main.dblog_parsing(end_line=380000)
+    # main.accesslog_parsing()

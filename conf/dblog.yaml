@@ -1,2 +1,3 @@
+log_filepath: C:\Users\skns\PycharmProjects\logparser\data
 dateformat: "%Y%m%d %H:%M:%S"
 start_headline: 5
