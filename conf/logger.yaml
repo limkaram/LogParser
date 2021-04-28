@@ -17,7 +17,7 @@ handlers:
         class: logging.FileHandler
         level: DEBUG
         formatter: basic
-        filename: ..\logs\etl.log
+        filename: ../logs/etl.log
 
 loggers:
     main:

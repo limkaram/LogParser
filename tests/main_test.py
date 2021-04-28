@@ -131,7 +131,8 @@ class Main:
                 result.append(value)
             result.sort(key=lambda x: x['time'], reverse=False)
             df = pd.DataFrame(result, columns=['time', 'thread_id', 'command', 'argument'])
-            print(df.head(50))
+            # print(df.tail(50))
+            print(df['argument'].unique())
             print(df.info())
             # controller.df2file(df, os.path.join('..', 'outputs', 'result_20210414.csv'))
 
