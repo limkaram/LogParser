@@ -2,24 +2,23 @@ import re
 import os
 import yaml
 import datetime
+import chardet
 from dateutil import parser
 from collections import OrderedDict
 from user_agents import parse
 from typing import *
 
-CONFIG_PATH: str = os.path.join('..', 'conf', 'accesslog.yaml')
+ACCESSLOG_CONFIG_PATH: str = os.path.join('..', 'conf', 'accesslog.yaml')
 
 
 class Controller:
     def __init__(self):
-        self.config: dict = yaml.load(open(CONFIG_PATH), Loader=yaml.FullLoader)
+        self.config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
         self.dateformat: str = self.config['dateformat']
 
     @staticmethod
-    def readline(path: str) -> Generator[str, None, None]:
-        with open(path, 'r', encoding='UTF-8') as f:
-            for line in f.readlines():
-                yield line
+    def get_encoding_type(text: str) -> str:
+        return chardet.detect(text)['encoding']
 
     @staticmethod
     def _parse_useragent_string(user_agent_string: str):
