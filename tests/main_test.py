@@ -33,13 +33,8 @@ class Main:
         self.logger.info('access log parsing start')
         accesslog_config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
         data_path: str = accesslog_config['log_filepath']
-        ip_count: OrderedDict = OrderedDict()
 
         for dirname in os.listdir(data_path):
-            # if dirname != '20210310':
-            #     continue
-            # # if dirname not in ['20210209', '20210310', '20210318', '20210320', '20210321', '20210326']:
-            # #     continue
             print(f'{dirname} parsing start')
             try:
                 filepath: str = glob.glob(os.path.join(data_path, dirname, '*access*'))[0]
@@ -60,40 +55,13 @@ class Main:
                         parsed_text: dict = controller.parsing(text.decode(encoding_type))
                         parsed_info.append(parsed_text)
                     except UnicodeDecodeError as e:
-                        print(f'error :: {e}')
-                        fail.append(dirname)
+                        self.logger.error(f'{e} :: {dirname} :: [{line_num}, {encoding_type}, {text}]')
                         continue
-            success.append(dirname)
             df = pd.DataFrame(parsed_info)
             print(df.head())
             print(df.info())
             df.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', f'accesslog_{dirname}.csv'))
-
-
-            # print(f'os : {df["os"].unique()}')
-            # print(f'os version : {df["os_version"].unique()}')
-            # print('')
-            # print(f'browser : {df["browser"].unique()}')
-            # print(f'browser_version : {df["browser_version"].unique()}')
-            # print('')
-            # print(f'device : {df["device"].unique()}')
-            # print(f'device brand : {df["device_brand"].unique()}')
-            # print(f'device model : {df["device_model"].unique()}')
             print('')
-
-        print('##########fail############')
-        print(fail)
-        print('')
-        print('##########success############')
-        print(success)
-
-            # ip_count[dirname] = len(df['ip'].unique())
-
-        # print('==========Consider only the number of unique IP address==========')
-        # mean = sum(ip_count.values()) / len(ip_count)
-        # standard_deviation = math.sqrt(sum([(i - mean) ** 2 for i in ip_count.values()]) / len(ip_count))
-        # print(f'mean : {mean}')
-        # print(f'std deviation : {standard_deviation}\n')
 
     def dblog_parsing(self, end_line):
         self.logger.info('mariaDB log parsing start')
