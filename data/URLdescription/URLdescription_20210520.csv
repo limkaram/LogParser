@@ -1,0 +1,459 @@
+,prefix_depth,url_element,description
+0,0,survey,설문조사
+1,1,responseView.px,설문조사 완료
+2,1,responseView_insert.px,설문조사 DB insert
+3,1,survey.px,설문조사
+4,0,en,영문 페이지
+5,1,main,웹 접근 홈페이지
+6,2,index.px,홈페이지
+7,1,podo,포도호텔
+8,2,mobile,모바일
+9,3,index.px,홈페이지
+10,3,about.px,호텔 소개
+11,3,photos.px,포토뷰
+12,3,hot_guide.px,온천 소개
+13,3,hot_intro.px,온천 소개 메인
+14,3,room_suite.px,룸 소개 메인
+15,3,room_royal_suite_tradition.px,로얄 스위트 한실 소개
+16,3,room_royal_suite.px,로얄 스위트 양실 소개
+17,3,room_deluxe_tradition.px,디럭스 한실 소개
+18,3,room_deluxe.px,디럭스 양실 소개
+19,3,reservation_guide.px,룸 예약 안내
+20,3,podo_gall_guide.px,갤러리 소이 소개
+21,3,arch_guide.px,건축 예술 가이드
+22,3,trekking.px,트래킹
+23,3,restaurant.px,레스토랑
+24,3,wedding_guide.px,웨딩
+25,3,location.px,리조트 찾아오시는 길
+26,3,location_resort.px,리조트 내 이동 가이드
+27,3,resort.px,핀크스 회사 소개
+28,3,history.px,핀크스 회사 연혁소개
+29,0,mobile,모바일
+30,1,main.px,모바일 접근 홈페이지
+31,1,recruit_01.px,채용안내
+32,1,recruit_02.px,채용공고
+33,1,recruit_02_view.px,채용공고(기본 틀)
+34,1,recruit_03.px,인재DB등록
+35,1,recruit_04.px,채용결과확인
+36,1,recruit_04_view.px,채용결과확인(기본 틀)
+37,1,recruit_05.px,채용 FAQ
+38,1,recruit_06.px,인재상
+39,1,recruit_07.px,인사제도
+40,1,recruit_08.px,복리후생
+41,1,recruit_09.px,채용 공지사항
+42,1,recruit_09_view.px,채용 공지사항(기본 틀)
+43,1,recruit_passSearch.px,채용결과 이름/비밀번호 입력 이전
+44,1,recruit_passResult.px,채용결과 이름/비밀번호 입력 이후
+45,1,recruit_searchPassword.px,채용공고 비밀번호 찾기 입력 이전
+46,1,recruit_searchPasswordResult.px,채용공고 비밀번호 찾기 입력 이후
+47,2,web,웹
+48,3,sitemap.px,사이트맵
+49,3,weather.px,기상정보
+50,0,annex,디아넥스
+51,1,web,웹
+52,2,login.px,멤버십 로그인
+53,2,reservation_login.px,예약 확인
+54,2,dormantCert.px,멤버십 가입
+55,2,joinCert.px,멤버십 가입 시작점
+56,2,joinAgree.px,멤버십 가입 승인
+57,2,joinForm.px,멤버십 가입 양식
+58,2,joinComplete.px,멤버십 가입 완료
+59,2,findId.px,멤버십 아이디 찾기
+60,2,findPasswd.px,멤버십 비밀번호 찾기
+61,2,findIdResult.px,멤버십 아이디 찾기 결과
+62,2,findPasswdResult.px,멤버십 비밀번호 찾기 결과
+63,2,updateMember.px,회원정보 수정
+64,2,reservation_nomember.px,예약정보 조회
+65,2,CancleReserve.px,예약취소
+66,2,my_reservation.px,내 예약정보
+67,2,my_info_pw.px,나의 정보(패스워드)
+68,2,my_info.px,나의 정보
+69,2,outMember.px,마이페이지 회원 탈퇴
+70,2,withdrawal.px,멤버 철회
+71,2,customer_review.px,고객리뷰
+72,2,my_membership.px,마이페이지 멤버십
+73,2,location.px,리조트 찾아오시는 길
+74,2,location_resort.px,리조트 내 이동 가이드
+75,2,about.px,호텔 소개
+76,2,photos.px,포토뷰
+77,2,notice.px,공지사항
+78,2,notice_view.px,공지사항(기본 틀)
+79,2,news_room.px,뉴스룸
+80,2,newsRoom_view.px,뉴스룸(기본 틀)
+81,2,reservation_guide.px,예약 안내
+82,2,hot_guide.px,온천 소개
+83,2,hot_intro.px,온천 소개 메인
+84,2,swim_pool.px,수영장 소개
+85,2,golf_tang.px,골프탕탕 소개
+86,2,sports_hall.px,스포츠 홀 소개
+87,2,tennis_guide.px,테니스장 이용안내
+88,2,tennis_member.px,테니스장 멤버십 안내
+89,2,tennis_class.px,테니스장 강습 안내
+90,2,book_cafe.px,북카페 안내
+91,2,jung.px,중정 안내
+92,2,conference.px,컨퍼런스룸 안내
+93,2,pstore.px,P-스토어 안내
+94,2,lounge.px,레스토랑 안내
+95,2,lounge_menu.px,레스토랑 메뉴 안내
+96,2,restaurant.px,레스토랑 안내
+97,2,restaurant_menu.px,레스토랑 메뉴 안내
+98,2,package_list.px,객실패키지 안내
+99,2,package_detail.px,객실패키지별 상세내용 안내
+100,2,reserve_search.px,객실예약 마감 여부 체크
+101,2,reserve_options.px,객실예약 객실 옵션 선택
+102,2,reserve_payment.px,객실예약 결제
+103,2,jeju_event_list.px,제주도 축제/행사 리스트
+104,2,jeju_tour_list.px,제주도 제휴사 혜택 안내
+105,2,membership.px,멤버십 안내
+106,2,room_suite_a.px,객실 스위트 A 안내
+107,2,room_suite_b.px,객실 스위트 B 안내
+108,2,room_family_suite.px,객실 패밀리 스위트 안내
+109,2,room_baby.px,객실 베이비룸 안내
+110,2,room_family.px,객실 패밀리룸 안내
+111,2,room_superior_twin.px,객실 슈페리어 트윈 안내
+112,2,room_superior_double.px,객실 슈페리어 더블 안내
+113,2,insertReservaion.px,객실예약 완료
+114,2,reserve_complete.px,객실예약 완료
+115,2,logout.px,로그아웃
+116,2,resort.px,핀크스 회사 소개
+117,2,history.px,핀크스 회사 연혁소개
+118,2,private_policy.px,핀크스 개인정보 처리방침 안내
+119,2,service_policy.px,핀크스 이용약관 안내
+120,2,ethics.px,핀크스 윤리경영 안내
+121,2,email_policy.px,핀크스 이메일 무단 수집 거부
+122,2,sitemap.px,사이트맵
+123,2,faq.px,인재채용 관련 요소
+124,2,recruit_01.px,인재채용 관련 요소
+125,2,recruit_02.px,인재채용 관련 요소
+126,2,recruit_03.px,인재채용 관련 요소
+127,2,recruit_04.px,인재채용 관련 요소
+128,2,recruit_05.px,인재채용 관련 요소
+129,2,weather.px,기상정보
+130,2,contact_marketing_agree.px,마케팅 관련 개인정보 관련 동의서
+131,2,contact_marketing.px,마케팅 제휴 문의내용 작성
+132,2,contact_marketing_mailSending.px,마케팅 제휴 문의내용 메일 송부
+133,2,contact_event_agree.px,행사 관련 개인정보 관련 동의서
+134,2,contact_event.px,행사 관련 문의내용 작성
+135,2,contact_event_mailSending.px,행사 관련 문의내용 메일 송부
+136,2,passwordChange.px,비밀번호 변경
+137,2,tour_program.px,P-레저 프로그램 소개
+138,2,tour_reserve_form.px,P-레저 예약신청
+139,2,insertTourReserve.px,P-레저 예약 DB 등록
+140,2,tour_reserve_complete.px,P-레저 예약 완료
+141,2,reserve_login_process.px,객실예약 로그인 프로세스
+142,1,biotopia,비오토피아
+143,3,bakery.px,베이커리 소개
+144,3,museum.px,박물관 소개
+145,0,biotopia,비오토피아
+146,2,bakery.px,베이커리 소개
+147,2,bakery_menu.px,베이커리 메뉴 소개
+148,2,museum.px,박물관 소개
+149,0,jp,일본 페이지 접속
+150,1,golfclub,골프클럽 접속
+151,3,awards.px,어워즈 소개
+152,3,tournament.px,토너먼트 소개
+153,3,tournament2.px,토너먼트 소개
+154,3,tournament3.px,토너먼트 소개
+155,3,tournament4.px,토너먼트 소개
+156,3,guide_time.px,이용안내 운영시간
+157,3,guide_dress.px,이용안내 복장규정
+158,3,guide_etiquette.px,이용안내 복장규정
+159,3,guide_rule.px,이용안내 LOCAL RULES
+160,3,charge_enter.px,요금안내 입장료
+161,3,charge_cart.px,요금안내 카트/캐디피
+162,3,charge_rental.px,요금안내 렌탈
+163,3,charge_weather.px,요금안내 악천후시
+164,3,course_all.px,골프코스 소개
+165,3,sauna.px,락카&사우나 소개
+166,3,pro_shop.px,프로샵 소개
+167,3,golf_academy.px,골프연습장 소개
+168,3,event_hall.px,대연회장 안내
+169,3,event_hall_pdr.px,소연회장 안내
+170,3,bbq.px,그린사이드 BBQ 안내
+171,3,start_house.px,스타트 하우스 안내
+172,1,annex,디아넥스
+173,3,sweet_b.px,객실 스위트 B 소개
+174,3,sweet_a.px,객실 스위트 A 소개
+175,3,family_sweet.px,객실 패밀리 스위트 소개
+176,3,baby.px,객실 베이비룸 소개
+177,3,family.px,객실 패밀리룸 소개
+178,3,superior_twin.px,객실 슈퍼리어 트윈 소개
+179,3,superior_double.px,객실 슈퍼리어 더블 소개
+180,3,swim_pool.px,수영장 소개
+181,3,golf_tang.px,골프탕탕 소개
+182,3,sports_hall.px,스포츠 홀 소개
+183,3,tennis_guide.px,테니스장 이용안내
+184,3,tennis_member.px,테니스장 멤버십 안내
+185,3,tennis_class.px,테니스장 강습 안내
+186,3,book_cafe.px,북카페 안내
+187,3,jung.px,중정 안내
+188,3,conference.px,컨퍼런스룸 안내
+189,3,pstore.px,P-스토어 안내
+190,1,mobile,모바일
+191,2,sweet_a.px,객실 스위트 A 소개
+192,2,sweet_b.px,객실 스위트 B 소개
+193,2,family_sweet.px,객실 패밀리 스위트 소개
+194,2,baby.px,객실 베이비룸 소개
+195,2,family.px,객실 패밀리룸 소개
+196,2,superior_twin.px,객실 슈퍼리어 트윈 소개
+197,2,superior_double.px,객실 슈퍼리어 더블 소개
+198,2,reserve_people.px,객실예약 인원수
+199,2,main.px,모바일 접근 홈페이지
+200,0,reservation,객실 예약
+201,2,package,객실패키지 페이지
+202,3,pinxPackageList.px,패키지 목록
+203,3,pinxPackagePriceInsertForm.px,패키지 가격설정
+204,3,pinxRerservation03_insert.px,패키지 가격설정 등록
+205,3,pinxPackagePriceDetail.px,패키지 가격설정 수정
+206,3,pinxPackagePriceUpdate.px,패키지 가격 수정
+207,3,pinxPackagePriceDelete.px,패키지 가격 삭제
+208,3,pinxReservationMain.px,패키지 예약 화면
+209,3,pinxReservation.px,패키지 예약
+210,3,getPrice.px,객실 가격 가져오기
+211,3,pinxReservationList.px,패키지 예약 정보 리스트
+212,3,pinxReservationCancelUpdate.px,패키지 예약 취소
+213,3,pinxReservationDetail.px,패키지 예약 정보 수정
+214,3,pinxReservationUpdate.px,패키지 예약 업데이트
+215,3,pinxHolydayList.px,연휴 리스트
+216,3,pinxHolydayInsertForm.px,연휴 등록
+217,3,pinxHolydayInsert.px,연휴 등록
+218,3,pinxHolydayDetail.px,연휴 수정
+219,3,pinxHolydayUpdate.px,연휴 업데이트
+220,3,pinxHolidayDelete.px,연휴 삭제
+221,3,pinxHolidayCheckDelete.px,연휴 삭제(체크박스)
+222,3,room_suite_a.px,객실 스위트 A 안내
+223,3,room_suite_b.px,객실 스위트 B 안내
+224,3,room_family_suite.px,객실 패밀리 스위트 안내
+225,3,room_baby.px,객실 베이비룸 안내
+226,3,room_family.px,객실 패밀리룸 안내
+227,3,room_superior_twin.px,객실 슈페리어 트윈 안내
+228,3,room_superior_double.px,객실 슈페리어 더블 안내
+229,0,main,웹 접근 홈페이지
+230,1,index.px,홈페이지
+231,0,pop,팝업창 관련 요소
+232,1,canclePop.px,취소 안내 메시지 팝업
+233,0,resort.px,핀크스 회사 소개
+234,0,history.px,핀크스 회사 연혁소개
+235,0,private_policy.px,핀크스 개인정보 처리방침 안내
+236,0,service_policy.px,핀크스 이용약관 안내
+237,0,ethics.px,핀크스 윤리경영 안내
+238,0,email_policy.px,핀크스 이메일 무단 수집 거부
+239,0,sitemap.px,사이트맵
+240,0,faq.px,인재채용 관련 요소
+241,0,rec,인재채용
+242,1,recruit_step00.px,인재채용 관련 요소
+243,1,recruit_step01.px,인재채용 관련 요소
+244,1,goStep02.px,인재채용 관련 요소
+245,1,recruit_step02.px,인재채용 관련 요소
+246,1,selectDEPT.px,인재채용 작성내용 DB 저장 관련 요소
+247,1,insertStep02.px,인재채용 관련 요소
+248,1,saveStep02.px,인재채용 작성내용 DB 저장 관련 요소
+249,1,saveDbStep02.px,인재채용 작성내용 DB 저장 관련 요소
+250,1,recruit_step03.px,인재채용 관련 요소
+251,1,insertStep03.px,인재채용 관련 요소
+252,1,saveStep03.px,인재채용 작성내용 DB 저장 관련 요소
+253,1,saveDbStep03.px,인재채용 작성내용 DB 저장 관련 요소
+254,1,recruit_step04.px,인재채용 관련 요소
+255,1,insertStep04.px,인재채용 관련 요소
+256,1,saveStep04.px,인재채용 작성내용 DB 저장 관련 요소
+257,1,saveDbStep04.px,인재채용 작성내용 DB 저장 관련 요소
+258,1,recruit_step05.px,인재채용 관련 요소
+259,1,insertStep05.px,인재채용 관련 요소
+260,1,saveStep05.px,인재채용 작성내용 DB 저장 관련 요소
+261,1,saveDbStep05.px,인재채용 작성내용 DB 저장 관련 요소
+262,1,recruit_step06.px,인재채용 관련 요소
+263,1,insertStep06.px,인재채용 관련 요소
+264,1,saveStep06.px,인재채용 작성내용 DB 저장 관련 요소
+265,1,saveDbStep06.px,인재채용 작성내용 DB 저장 관련 요소
+266,1,recruit_step07.px,인재채용 관련 요소
+267,1,insertStep07.px,인재채용 관련 요소
+268,1,saveStep07.px,인재채용 작성내용 DB 저장 관련 요소
+269,1,saveDbStep07.px,인재채용 작성내용 DB 저장 관련 요소
+270,1,recruit_step08.px,인재채용 관련 요소
+271,1,insertStep08.px,인재채용 관련 요소
+272,1,saveStep08.px,인재채용 작성내용 DB 저장 관련 요소
+273,1,saveDbStep08.px,인재채용 작성내용 DB 저장 관련 요소
+274,1,recruit_step09.px,인재채용 관련 요소
+275,1,saveStep09.px,인재채용 작성내용 DB 저장 관련 요소
+276,1,saveDbStep09.px,인재채용 작성내용 DB 저장 관련 요소
+277,1,insertStep09.px,인재채용 관련 요소
+278,1,recruit_db_step01.px,인재채용 관련 요소
+279,1,recruit_db_step02.px,인재채용 관련 요소
+280,1,db_goStep02.px,DB 지원서 저장
+281,1,recruit_db_step03.px,인재채용 관련 요소
+282,1,insert_db_Step03.px,인재채용 관련 요소
+283,1,recruit_db_step04.px,인재채용 관련 요소
+284,1,insert_db_Step04.px,인재채용 관련 요소
+285,1,recruit_db_step05.px,인재채용 관련 요소
+286,1,insert_db_Step05.px,인재채용 관련 요소
+287,1,recruit_db_step06.px,인재채용 관련 요소
+288,1,insert_db_Step06.px,인재채용 관련 요소
+289,1,recruit_db_step07.px,인재채용 관련 요소
+290,1,insert_db_Step07.px,인재채용 관련 요소
+291,1,recruit_db_step08.px,인재채용 관련 요소
+292,1,insert_db_Step08.px,인재채용 관련 요소
+293,1,recruit_db_step09.px,인재채용 관련 요소
+294,1,insert_db_Step09.px,인재채용 관련 요소
+295,1,recruit_db_step10.px,인재채용 관련 요소
+296,1,insert_db_Step10.px,인재채용 관련 요소
+297,1,recruit_search.px,인재채용 관련 요소
+298,1,ajaxSearchGiwon.px,인재채용 관련 요소
+299,1,ajaxSearchREC.px,인재채용 관련 요소
+300,1,recruit_searchResult.px,인재채용 관련 요소
+301,1,ajaxSearchPassword.px,인재채용 관련 요소
+302,1,giwonCancel.px,인재채용 지원 취소
+303,1,giwonUpdate.px,인재채용 지원 업데이트
+304,1,recruit_db_search.px,인재채용 관련 요소
+305,1,recruit_db_searchResult.px,인재채용 관련 요소
+306,1,recruit_db_searchPassword.px,인재채용 관련 요소
+307,1,recruit_db_searchPasswordResult.px,인재채용 관련 요소
+308,0,recruit_02_form.px,인재채용 관련 요소
+309,0,recruit_02_form01.px,인재채용 관련 요소
+310,0,recruit_02_form02.px,인재채용 관련 요소
+311,0,recruit_02_form03.px,인재채용 관련 요소
+312,0,recruit_02_form04.px,인재채용 관련 요소
+313,0,recruit_02_form05.px,인재채용 관련 요소
+314,0,recruit_02_form06.px,인재채용 관련 요소
+315,0,recruit_02_form07.px,인재채용 관련 요소
+316,1,insertVLT01.px,인재채용 관련 요소
+317,1,insertVLT02.px,인재채용 관련 요소
+318,1,dept_ajaxSmallDeptList.px,dept_ajaxSmallDeptList.px(호출부 없음)
+319,0,notice.px,공지사항
+320,0,notice_view.px,공지사항(기본 틀)
+321,1,pwdTest.px,인재채용 관련 요소
+322,1,recruit_db_next_step.px,인재채용 관련 요소
+323,1,recruit_next_step.px,인재채용 관련 요소
+324,0,podo,포도호텔
+325,2,room_suite.px,룸 소개 메인
+326,2,room_royal_suite_tradition.px,로얄 스위트 한실 소개
+327,2,room_royal_suite.px,로얄 스위트 양실 소개
+328,2,room_deluxe_tradition.px,디럭스 한실 소개
+329,2,room_deluxe.px,디럭스 양실 소개
+330,2,podo_gall_guide.px,갤러리 소이 소개
+331,2,podo_gall_ex.px,갤러리 소이 전시품 안내
+332,2,arch_guide.px,건축 예술 가이드
+333,2,trekking.px,트래킹
+334,2,wedding_guide.px,웨딩
+335,2,wedding_image.px,웨딩
+336,2,jeju_hotel_list.px,호텔 기념품 리스트
+337,2,contact_wedding_agree.px,웨딩 관련 개인정보 관련 동의서
+338,2,contact_wedding.px,웨딩 관련 문의내용 작성
+339,2,contact_wedding_mailSending.px,웨딩 관련 문의내용 메일 송부
+340,0,golfclub,골프클럽 접속
+341,2,golf_club_main.px,골프클럽 메인 홈페이지
+342,2,awards.px,어워즈 소개
+343,2,tournament.px,토너먼트 소개
+344,2,photos_ex.px,골프클럽 오버뷰 사진
+345,2,photos_nature.px,골프클럽 자연 사진
+346,2,photos_course.px,골프클럽 코스 사진
+346,2,course.px,골프클럽 코스 안내
+347,2,photos_architecture.px,골프클럽 건축물 사진
+348,2,guide_time.px,이용안내 운영시간
+349,2,guide_dress.px,이용안내 복장규정
+350,2,guide_etiquette.px,이용안내 복장규정
+351,2,guide_rule.px,이용안내 LOCAL RULES
+352,2,charge_enter.px,요금안내 입장료
+353,2,charge_cart.px,요금안내 카트/캐디피
+354,2,charge_rental.px,요금안내 렌탈
+355,2,charge_weather.px,요금안내 악천후시
+356,2,course,골프코스 소개
+357,2,sauna.px,락카&사우나 소개
+358,2,pro_shop.px,프로샵 소개
+359,2,golf_academy.px,골프연습장 소개
+360,2,event_hall.px,대연회장 안내
+361,2,event_hall_pdr.px,소연회장 안내
+362,2,bbq.px,그린사이드 BBQ 안내
+363,2,start_house.px,스타트 하우스 안내
+364,2,noticeall.px,공지사항
+365,2,notice_viewall.px,공지사항(기본 틀)
+366,0,users,users(미사용)
+368,1,login,로그인
+369,1,editAccount,"editAccount(주석처리, 미사용)"
+372,1,logout,로그아웃
+373,0,member,멤버
+374,1,joinMember.px,멤버십 가입 관련 요소
+375,1,idcheck.px,아이디 체크
+376,1,login.px,멤버십 로그인
+377,1,logout.px,로그아웃
+378,1,idCheck.px,아이디 체크
+379,1,join01.px,멤버십 가입 관련 요소
+380,1,join02.px,멤버십 가입 관련 요소
+381,1,join03.px,멤버십 가입 관련 요소
+382,1,mypage01.px,마이 페이지
+383,1,mypage02.px,마이 페이지
+384,1,updMember.px,회원정보 수정
+385,1,updateMember.px,회원정보 수정
+386,1,delMember.px,회원탈퇴
+387,1,find01.px,회원가입 본인인증
+388,1,find02.px,회원가입 본인인증
+389,1,pwchange.px,비밀번호 변경
+390,1,updateChangePassword.px,회원정보 비밀번호 변경 클릭
+391,1,updateChangePasswordLater.px,회원정보 비밀번호 변경 나중에하기 클릭
+392,1,guestnoCheck.px,guestnoCheck.px(호출부 없음)
+393,1,pcc_V3_input_seed.px,SCI평가정보 본인확인서비스 테스트
+394,1,pcc_V3_sample_seed.px,SCI평가정보 본인확인서비스 테스트
+395,1,pcc_V3_popup_seed.px,SCI평가정보 본인확인서비스 테스트
+396,1,pcc_V3_result_seed.px,SCI평가정보 본인확인서비스 테스트
+397,1,mailSending1.px,휴면회원 메일 발송
+398,1,mailSending2.px,휴면회원 메일 발송
+399,1,mailSending3.px,휴면회원 메일 발송
+400,1,changeMember1.px,휴면회원 전환
+401,1,sendingAlarm2.px,멤버십 가입 멤버 메일 발송 관련 요소
+402,1,sendingAlarm1.px,멤버십 가입 멤버 메일 발송 관련 요소
+403,0,test,test(미사용)
+404,2,test01.px,test01.px(미사용)
+405,2,tournament2.px,토너먼트 소개
+406,2,tournament3.px,토너먼트 소개
+407,2,tournament4.px,토너먼트 소개
+408,2,course_all.px,골프코스 소개
+409,2,course_east_01.px,골프코스 EAST COURSE 소개
+410,2,course_east_02.px,골프코스 EAST COURSE 소개
+411,2,course_east_03.px,골프코스 EAST COURSE 소개
+412,2,course_east_04.px,골프코스 EAST COURSE 소개
+413,2,course_east_05.px,골프코스 EAST COURSE 소개
+414,2,course_east_06.px,골프코스 EAST COURSE 소개
+415,2,course_east_07.px,골프코스 EAST COURSE 소개
+416,2,course_east_08.px,골프코스 EAST COURSE 소개
+417,2,course_east_09.px,골프코스 EAST COURSE 소개
+418,2,course_west_01.px,골프코스 WEST COURSE 소개
+419,2,course_west_02.px,골프코스 WEST COURSE 소개
+420,2,course_west_03.px,골프코스 WEST COURSE 소개
+421,2,course_west_04.px,골프코스 WEST COURSE 소개
+422,2,course_west_05.px,골프코스 WEST COURSE 소개
+423,2,course_west_06.px,골프코스 WEST COURSE 소개
+424,2,course_west_07.px,골프코스 WEST COURSE 소개
+425,2,course_west_08.px,골프코스 WEST COURSE 소개
+426,2,course_west_09.px,골프코스 WEST COURSE 소개
+427,2,course_north_01.px,골프코스 NORTH COURSE 소개
+428,2,course_north_02.px,골프코스 NORTH COURSE 소개
+429,2,course_north_03.px,골프코스 NORTH COURSE 소개
+430,2,course_north_04.px,골프코스 NORTH COURSE 소개
+431,2,course_north_05.px,골프코스 NORTH COURSE 소개
+432,2,course_north_06.px,골프코스 NORTH COURSE 소개
+433,2,course_north_07.px,골프코스 NORTH COURSE 소개
+434,2,course_north_08.px,골프코스 NORTH COURSE 소개
+435,2,course_north_09.px,골프코스 NORTH COURSE 소개
+436,2,pop_entry_authresult.px,팝업차단 해제 여부 결과
+437,2,chkuseriddup.px,기 회원 가입 여부 확인
+438,2,entry_update.px,회원가입 기입사항 업데이트
+439,2,room_Presidentialsuite.px,room_Presidentialsuite.px(호출부 없음)
+440,2,getSerchPackage.px,기간별 예약가능 패키지 정보 가져오기
+441,2,getBedOptions.px,객실 침대 옵션 가져오기
+442,2,getRoomInfo.px,객실 정보 가져오기
+443,2,mail_otpin_result.px,광고성 메일 수신차단 체크 여부 결과
+444,2,mail_otpin_success.px,광고성 메일 수신차단
+445,2,chkMember.px,chkMember.px(호출부 없음)
+446,2,sub02_01.px,세부 컨텐츠
+447,2,sub03_01.px,세부 컨텐츠
+448,0,tangtang,골프탕탕 관련 요소
+449,1,package_list.px,객실패키지 리스트
+450,2,sub03_06_01_01.px,세부 컨텐츠
+451,1,package_detail.px,객실패키지 상세 정보
+452,2,sub02_05.px,세부 컨텐츠
+453,2,biotopia_info.px,비오토피아 정보
+454,1,hotspring,온천이미지
+455,2,hotspring_guide.px,온천가이드
+456,2,sub_indivisual.px,개인정보취급방침
+457,2,sub02_01_01.px,세부 컨텐츠
+458,2,sub02_04.px,세부 컨텐츠
+459,2,sub_weather.px,날씨 정보

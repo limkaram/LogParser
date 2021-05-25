@@ -16602,3 +16602,910 @@
 2021-05-17 17:00:25 :: main :: accesslog_parsing :: INFO  :: access log parsing start
 2021-05-17 17:07:24 :: main :: accesslog_parsing :: INFO  :: access log parsing start
 2021-05-17 19:25:26 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-20 09:24:44 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-20 09:25:40 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210117] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210118] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210119] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210120] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210121] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210122] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210123] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210124] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210125] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210126] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210127] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210128] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210129] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210130] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210131] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210201] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210202] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210203] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210204] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210205] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210206] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210207] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210208] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210209] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210210] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210211] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210212] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210213] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210214] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210215] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210216] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210217] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210218] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210219] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210220] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210221] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210222] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210223] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210224] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210225] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210226] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210227] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210228] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210301] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210302] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210303] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210304] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210305] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210306] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210307] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210308] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210309] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210310] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210311] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210312] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210313] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210314] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210315] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210316] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210317] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210318] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210319] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210320] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210321] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210322] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210323] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210324] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210325] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210326] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210327] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210328] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210329] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210330] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210331] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210401] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210402] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210403] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210404] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210405] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210406] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210407] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210408] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210409] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210410] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210411] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210412] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210413] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210414] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210415] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210416] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210417] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210418] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210419] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210420] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210421] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210422] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210423] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210424] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210425] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210426] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210427] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210428] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210429] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210430] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210501] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210502] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210503] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210504] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210505] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210506] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210507] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210508] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210509] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210510] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210511] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210512] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210513] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210514] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210515] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210516] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210517] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210518] file parsing
+2021-05-24 17:16:22 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210519] file parsing
+2021-05-24 17:24:36 :: main :: referer2action :: INFO  :: accesslog_20210117.csv start
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210117] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210118] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210119] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210120] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210121] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210122] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210123] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210124] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210125] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210126] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210127] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210128] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210129] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210130] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210131] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210201] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210202] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210203] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210204] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210205] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210206] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210207] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210208] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210209] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210210] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210211] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210212] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210213] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210214] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210215] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210216] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210217] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210218] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210219] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210220] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210221] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210222] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210223] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210224] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210225] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210226] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210227] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210228] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210301] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210302] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210303] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210304] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210305] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210306] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210307] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210308] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210309] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210310] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210311] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210312] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210313] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210314] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210315] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210316] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210317] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210318] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210319] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210320] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210321] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210322] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210323] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210324] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210325] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210326] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210327] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210328] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210329] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210330] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210331] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210401] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210402] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210403] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210404] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210405] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210406] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210407] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210408] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210409] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210410] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210411] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210412] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210413] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210414] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210415] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210416] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210417] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210418] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210419] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210420] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210421] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210422] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210423] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210424] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210425] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210426] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210427] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210428] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210429] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210430] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210501] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210502] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210503] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210504] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210505] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210506] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210507] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210508] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210509] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210510] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210511] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210512] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210513] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210514] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210515] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210516] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210517] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210518] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210519] file parsing process
+2021-05-24 17:29:42 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210520] file parsing process
+2021-05-24 17:30:59 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210117.csv] file parsing process
+2021-05-24 17:30:59 :: main :: referer2action :: INFO  :: accesslog_20210118.csv start
+2021-05-24 17:31:13 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 17:31:32 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 17:31:42 :: main :: referer2action :: INFO  :: accesslog_20210119.csv start
+2021-05-24 17:32:02 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 17:32:03 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 17:32:19 :: main :: referer2action :: INFO  :: accesslog_20210120.csv start
+2021-05-24 17:32:26 :: main :: referer2action :: ERROR :: fail : (2, 'sub05_01_02.px')
+2021-05-24 17:32:30 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 17:32:40 :: main :: referer2action :: ERROR :: fail : (2, 'hotspring_intro.px')
+2021-05-24 17:33:10 :: main :: referer2action :: INFO  :: accesslog_20210121.csv start
+2021-05-24 17:33:15 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 17:33:17 :: main :: referer2action :: ERROR :: fail : (2, '')
+2021-05-24 17:33:52 :: main :: referer2action :: INFO  :: accesslog_20210122.csv start
+2021-05-24 17:34:35 :: main :: referer2action :: INFO  :: accesslog_20210123.csv start
+2021-05-24 17:35:09 :: main :: referer2action :: INFO  :: accesslog_20210124.csv start
+2021-05-24 17:35:11 :: main :: referer2action :: ERROR :: fail : (1, 'room_deluxe_tradition.px')
+2021-05-24 17:35:57 :: main :: referer2action :: INFO  :: accesslog_20210125.csv start
+2021-05-24 17:36:01 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:36:01 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02.px')
+2021-05-24 17:36:09 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 17:36:25 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 17:36:47 :: main :: referer2action :: INFO  :: accesslog_20210126.csv start
+2021-05-24 17:36:52 :: main :: referer2action :: ERROR :: fail : (2, 'annex_intro.px')
+2021-05-24 17:37:25 :: main :: referer2action :: ERROR :: fail : (2, 'golf_intro.px')
+2021-05-24 17:37:42 :: main :: referer2action :: INFO  :: accesslog_20210127.csv start
+2021-05-24 17:38:06 :: main :: referer2action :: ERROR :: fail : (0, 'web')
+2021-05-24 17:38:33 :: main :: referer2action :: INFO  :: accesslog_20210128.csv start
+2021-05-24 17:38:50 :: main :: referer2action :: ERROR :: fail : (2, 'sub02_02ec_h1.px')
+2021-05-24 17:39:10 :: main :: referer2action :: ERROR :: fail : (0, 'index.px')
+2021-05-24 17:39:11 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 17:39:13 :: main :: referer2action :: INFO  :: accesslog_20210129.csv start
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (2, 'admin.px')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (1, 'contents')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub05_01.px')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (1, 'sys')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (1, 'package')
+2021-05-24 17:39:21 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub03_01.px')
+2021-05-24 17:39:58 :: main :: referer2action :: INFO  :: accesslog_20210130.csv start
+2021-05-24 17:40:07 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 17:40:11 :: main :: referer2action :: ERROR :: fail : (2, 'hotel_intro.px')
+2021-05-24 17:40:30 :: main :: referer2action :: INFO  :: accesslog_20210131.csv start
+2021-05-24 17:41:23 :: main :: referer2action :: INFO  :: accesslog_20210201.csv start
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01.px')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_02.px')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02.px')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_03.px')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:41:44 :: main :: referer2action :: ERROR :: fail : (2, 'sub04_01.px')
+2021-05-24 17:41:52 :: main :: referer2action :: ERROR :: fail : (1, 'arch_guide.px')
+2021-05-24 17:42:47 :: main :: referer2action :: INFO  :: accesslog_20210202.csv start
+2021-05-24 17:43:40 :: main :: referer2action :: ERROR :: fail : (0, 'golfclubmobile')
+2021-05-24 17:43:40 :: main :: referer2action :: ERROR :: fail : (1, 'charge_enter.px')
+2021-05-24 17:43:47 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:43:47 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01.px')
+2021-05-24 17:44:26 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01_01.px')
+2021-05-24 17:44:35 :: main :: referer2action :: INFO  :: accesslog_20210203.csv start
+2021-05-24 17:44:40 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 17:44:42 :: main :: referer2action :: ERROR :: fail : (2, 'sub02_02.px')
+2021-05-24 17:45:34 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 17:46:16 :: main :: referer2action :: INFO  :: accesslog_20210204.csv start
+2021-05-24 17:46:54 :: main :: referer2action :: ERROR :: fail : (1, 'board')
+2021-05-24 17:46:54 :: main :: referer2action :: ERROR :: fail : (2, 'ask')
+2021-05-24 17:46:54 :: main :: referer2action :: ERROR :: fail : (3, 'sub05_01_01.px')
+2021-05-24 17:47:56 :: main :: referer2action :: INFO  :: accesslog_20210205.csv start
+2021-05-24 17:48:59 :: main :: referer2action :: INFO  :: accesslog_20210206.csv start
+2021-05-24 17:49:02 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 17:49:51 :: main :: referer2action :: INFO  :: accesslog_20210207.csv start
+2021-05-24 17:50:07 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 17:50:46 :: main :: referer2action :: INFO  :: accesslog_20210208.csv start
+2021-05-24 17:51:59 :: main :: referer2action :: ERROR :: fail : (2, 'golf_news.px')
+2021-05-24 17:52:07 :: main :: referer2action :: INFO  :: accesslog_20210209.csv start
+2021-05-24 17:53:20 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 17:53:27 :: main :: referer2action :: INFO  :: accesslog_20210210.csv start
+2021-05-24 17:54:05 :: main :: referer2action :: ERROR :: fail : (2, 'golf_intro.px')
+2021-05-24 17:54:30 :: main :: referer2action :: INFO  :: accesslog_20210211.csv start
+2021-05-24 17:54:43 :: main :: referer2action :: ERROR :: fail : (2, 'sub02_07.px')
+2021-05-24 17:55:24 :: main :: referer2action :: ERROR :: fail : (2, 'sub02_02.px')
+2021-05-24 17:55:34 :: main :: referer2action :: INFO  :: accesslog_20210212.csv start
+2021-05-24 17:55:53 :: main :: referer2action :: ERROR :: fail : (1, 'notice_view.px')
+2021-05-24 17:56:28 :: main :: referer2action :: INFO  :: accesslog_20210213.csv start
+2021-05-24 17:56:43 :: main :: referer2action :: ERROR :: fail : (2, 'sub02_02.px')
+2021-05-24 17:57:10 :: main :: referer2action :: ERROR :: fail : (2, 'sub04_01.px')
+2021-05-24 17:57:48 :: main :: referer2action :: INFO  :: accesslog_20210214.csv start
+2021-05-24 17:58:18 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 17:58:40 :: main :: referer2action :: ERROR :: fail : (2, '')
+2021-05-24 17:58:41 :: main :: referer2action :: ERROR :: fail : (0, 'bottom')
+2021-05-24 17:58:41 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_05.px')
+2021-05-24 17:59:15 :: main :: referer2action :: ERROR :: fail : (2, 'package_10.px')
+2021-05-24 17:59:40 :: main :: referer2action :: INFO  :: accesslog_20210215.csv start
+2021-05-24 18:01:23 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 18:01:28 :: main :: referer2action :: INFO  :: accesslog_20210216.csv start
+2021-05-24 18:01:40 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:02:35 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:02:59 :: main :: referer2action :: INFO  :: accesslog_20210217.csv start
+2021-05-24 18:04:17 :: main :: referer2action :: INFO  :: accesslog_20210218.csv start
+2021-05-24 18:05:15 :: main :: referer2action :: INFO  :: accesslog_20210219.csv start
+2021-05-24 18:06:18 :: main :: referer2action :: INFO  :: accesslog_20210220.csv start
+2021-05-24 18:07:11 :: main :: referer2action :: INFO  :: accesslog_20210221.csv start
+2021-05-24 18:08:14 :: main :: referer2action :: INFO  :: accesslog_20210222.csv start
+2021-05-24 18:08:21 :: main :: referer2action :: ERROR :: fail : (2, 'sub04_01_02.px')
+2021-05-24 18:08:45 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01_03.px')
+2021-05-24 18:09:02 :: main :: referer2action :: ERROR :: fail : (1, 'room_suite.px')
+2021-05-24 18:09:47 :: main :: referer2action :: INFO  :: accesslog_20210223.csv start
+2021-05-24 18:10:06 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:11:02 :: main :: referer2action :: INFO  :: accesslog_20210224.csv start
+2021-05-24 18:11:11 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:12:23 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 18:12:27 :: main :: referer2action :: ERROR :: fail : (1, 'respinseView.px')
+2021-05-24 18:12:37 :: main :: referer2action :: INFO  :: accesslog_20210225.csv start
+2021-05-24 18:12:53 :: main :: referer2action :: ERROR :: fail : (2, 'package-detail.px')
+2021-05-24 18:13:11 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01_00.px')
+2021-05-24 18:13:28 :: main :: referer2action :: ERROR :: fail : (2, 'annex_room.px')
+2021-05-24 18:13:33 :: main :: referer2action :: ERROR :: fail : (2, 'intro.px')
+2021-05-24 18:13:49 :: main :: referer2action :: INFO  :: accesslog_20210226.csv start
+2021-05-24 18:14:59 :: main :: referer2action :: INFO  :: accesslog_20210227.csv start
+2021-05-24 18:15:52 :: main :: referer2action :: INFO  :: accesslog_20210228.csv start
+2021-05-24 18:16:43 :: main :: referer2action :: INFO  :: accesslog_20210301.csv start
+2021-05-24 18:18:28 :: main :: referer2action :: INFO  :: accesslog_20210302.csv start
+2021-05-24 18:18:44 :: main :: referer2action :: ERROR :: fail : (1, 'MOBILE')
+2021-05-24 18:19:50 :: main :: referer2action :: INFO  :: accesslog_20210303.csv start
+2021-05-24 18:20:06 :: main :: referer2action :: ERROR :: fail : (2, '')
+2021-05-24 18:21:09 :: main :: referer2action :: INFO  :: accesslog_20210304.csv start
+2021-05-24 18:22:20 :: main :: referer2action :: INFO  :: accesslog_20210305.csv start
+2021-05-24 18:23:20 :: main :: referer2action :: INFO  :: accesslog_20210306.csv start
+2021-05-24 18:24:08 :: main :: referer2action :: ERROR :: fail : (1, 'restaurant.px')
+2021-05-24 18:24:21 :: main :: referer2action :: INFO  :: accesslog_20210307.csv start
+2021-05-24 18:25:16 :: main :: referer2action :: ERROR :: fail : (1, 'restaurant.px')
+2021-05-24 18:25:40 :: main :: referer2action :: INFO  :: accesslog_20210308.csv start
+2021-05-24 18:25:56 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 18:27:05 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:27:07 :: main :: referer2action :: INFO  :: accesslog_20210309.csv start
+2021-05-24 18:27:22 :: main :: referer2action :: ERROR :: fail : (3, 'podo_gall_ex.px')
+2021-05-24 18:27:24 :: main :: referer2action :: ERROR :: fail : (1, 'golf_tang.px')
+2021-05-24 18:27:40 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 18:28:22 :: main :: referer2action :: INFO  :: accesslog_20210310.csv start
+2021-05-24 18:28:52 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 18:29:33 :: main :: referer2action :: INFO  :: accesslog_20210311.csv start
+2021-05-24 18:30:55 :: main :: referer2action :: INFO  :: accesslog_20210312.csv start
+2021-05-24 18:31:56 :: main :: referer2action :: INFO  :: accesslog_20210313.csv start
+2021-05-24 18:32:54 :: main :: referer2action :: INFO  :: accesslog_20210314.csv start
+2021-05-24 18:33:02 :: main :: referer2action :: ERROR :: fail : (2, 'hotel_intro.px')
+2021-05-24 18:33:53 :: main :: referer2action :: ERROR :: fail : (1, 'room_deluxe.px')
+2021-05-24 18:34:07 :: main :: referer2action :: INFO  :: accesslog_20210315.csv start
+2021-05-24 18:35:32 :: main :: referer2action :: INFO  :: accesslog_20210316.csv start
+2021-05-24 18:35:49 :: main :: referer2action :: ERROR :: fail : (2, 'intro.px')
+2021-05-24 18:37:05 :: main :: referer2action :: INFO  :: accesslog_20210317.csv start
+2021-05-24 18:37:45 :: main :: referer2action :: ERROR :: fail : (1, 'admin.px')
+2021-05-24 18:38:29 :: main :: referer2action :: INFO  :: accesslog_20210318.csv start
+2021-05-24 18:38:39 :: main :: referer2action :: ERROR :: fail : (1, 'sitmap.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'admin.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'sys')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'contents')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub05_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'package')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub03_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'contents')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub05_02.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'Hotel')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub11_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'popup')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub04_01_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub06_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'rec')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub09_01_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'rec')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub09_02_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'rec')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub09_03_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'rec')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub09_04_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub07_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'sys')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub08_01_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'sys')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub08_02_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'gallery')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub10_01_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'member')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub01_01.px')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (1, 'sys')
+2021-05-24 18:38:43 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub08_01_01.px')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (1, 'survey')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub11_01_01.px')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (0, 'admin')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (1, 'Hotel')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (2, 'adm_sub11_01.px')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (0, '')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (3, 'joinForm.px')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (3, '')
+2021-05-24 18:38:44 :: main :: referer2action :: ERROR :: fail : (4, 'course_all.px')
+2021-05-24 18:39:44 :: main :: referer2action :: INFO  :: accesslog_20210319.csv start
+2021-05-24 18:40:44 :: main :: referer2action :: INFO  :: accesslog_20210320.csv start
+2021-05-24 18:41:11 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01.px')
+2021-05-24 18:41:46 :: main :: referer2action :: INFO  :: accesslog_20210321.csv start
+2021-05-24 18:42:05 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_step10.px')
+2021-05-24 18:42:20 :: main :: referer2action :: ERROR :: fail : (2, 'sub05_01_02.px')
+2021-05-24 18:42:56 :: main :: referer2action :: INFO  :: accesslog_20210322.csv start
+2021-05-24 18:43:00 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:43:13 :: main :: referer2action :: ERROR :: fail : (2, 'package_02.px')
+2021-05-24 18:43:57 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:44:21 :: main :: referer2action :: INFO  :: accesslog_20210323.csv start
+2021-05-24 18:44:33 :: main :: referer2action :: ERROR :: fail : (2, 'tour_reservation_result.px')
+2021-05-24 18:44:39 :: main :: referer2action :: ERROR :: fail : (0, 'biopopia')
+2021-05-24 18:45:26 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_step10.px')
+2021-05-24 18:45:40 :: main :: referer2action :: INFO  :: accesslog_20210324.csv start
+2021-05-24 18:46:58 :: main :: referer2action :: INFO  :: accesslog_20210325.csv start
+2021-05-24 18:48:06 :: main :: referer2action :: INFO  :: accesslog_20210326.csv start
+2021-05-24 18:49:15 :: main :: referer2action :: INFO  :: accesslog_20210327.csv start
+2021-05-24 18:50:05 :: main :: referer2action :: ERROR :: fail : (2, 'biotopia_restaurant.px')
+2021-05-24 18:50:13 :: main :: referer2action :: INFO  :: accesslog_20210328.csv start
+2021-05-24 18:51:29 :: main :: referer2action :: INFO  :: accesslog_20210329.csv start
+2021-05-24 18:51:32 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:51:32 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:52:06 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:52:54 :: main :: referer2action :: INFO  :: accesslog_20210330.csv start
+2021-05-24 18:52:58 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:53:00 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:53:02 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:53:35 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_03_s.px')
+2021-05-24 18:53:35 :: main :: referer2action :: ERROR :: fail : (2, 'package_list_s.px')
+2021-05-24 18:53:35 :: main :: referer2action :: ERROR :: fail : (2, 'package_detail_s.px')
+2021-05-24 18:54:21 :: main :: referer2action :: INFO  :: accesslog_20210331.csv start
+2021-05-24 18:54:32 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:54:32 :: main :: referer2action :: ERROR :: fail : (2, 'annex_intro.px')
+2021-05-24 18:54:32 :: main :: referer2action :: ERROR :: fail : (2, 'package_01.px')
+2021-05-24 18:54:33 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_01_s.px')
+2021-05-24 18:54:33 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_02_s.px')
+2021-05-24 18:54:33 :: main :: referer2action :: ERROR :: fail : (2, 'package_list_s.px')
+2021-05-24 18:54:33 :: main :: referer2action :: ERROR :: fail : (2, 'package_detail_s.px')
+2021-05-24 18:54:33 :: main :: referer2action :: ERROR :: fail : (2, 'package_detail_s.px')
+2021-05-24 18:55:22 :: main :: referer2action :: INFO  :: accesslog_20210401.csv start
+2021-05-24 18:55:36 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:55:47 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01_02.px')
+2021-05-24 18:56:55 :: main :: referer2action :: INFO  :: accesslog_20210402.csv start
+2021-05-24 18:57:03 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:57:06 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:57:06 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_02_view_s.px')
+2021-05-24 18:57:56 :: main :: referer2action :: INFO  :: accesslog_20210403.csv start
+2021-05-24 18:58:04 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:59:04 :: main :: referer2action :: INFO  :: accesslog_20210404.csv start
+2021-05-24 18:59:15 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 18:59:24 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 18:59:27 :: main :: referer2action :: ERROR :: fail : (3, '')
+2021-05-24 18:59:27 :: main :: referer2action :: ERROR :: fail : (4, 'course_all.px')
+2021-05-24 18:59:44 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 18:59:45 :: main :: referer2action :: ERROR :: fail : (3, '')
+2021-05-24 18:59:45 :: main :: referer2action :: ERROR :: fail : (4, 'course_all.px')
+2021-05-24 19:00:14 :: main :: referer2action :: INFO  :: accesslog_20210405.csv start
+2021-05-24 19:00:47 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 19:01:13 :: main :: referer2action :: ERROR :: fail : (1, 'restaurant.px')
+2021-05-24 19:01:44 :: main :: referer2action :: INFO  :: accesslog_20210406.csv start
+2021-05-24 19:03:04 :: main :: referer2action :: INFO  :: accesslog_20210407.csv start
+2021-05-24 19:03:24 :: main :: referer2action :: ERROR :: fail : (1, 'mail.px')
+2021-05-24 19:04:23 :: main :: referer2action :: INFO  :: accesslog_20210408.csv start
+2021-05-24 19:04:25 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 19:05:23 :: main :: referer2action :: INFO  :: accesslog_20210409.csv start
+2021-05-24 19:05:28 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 19:05:30 :: main :: referer2action :: ERROR :: fail : (0, 'en-biotopia')
+2021-05-24 19:05:33 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_01_04.px')
+2021-05-24 19:05:41 :: main :: referer2action :: ERROR :: fail : (1, 'board')
+2021-05-24 19:05:41 :: main :: referer2action :: ERROR :: fail : (2, 'ask')
+2021-05-24 19:05:41 :: main :: referer2action :: ERROR :: fail : (3, 'sub_weather.px')
+2021-05-24 19:05:41 :: main :: referer2action :: ERROR :: fail : (0, 'en-biotopia')
+2021-05-24 19:05:41 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01.px')
+2021-05-24 19:06:27 :: main :: referer2action :: INFO  :: accesslog_20210410.csv start
+2021-05-24 19:07:11 :: main :: referer2action :: INFO  :: accesslog_20210411.csv start
+2021-05-24 19:07:54 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 19:08:19 :: main :: referer2action :: INFO  :: accesslog_20210412.csv start
+2021-05-24 19:08:27 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 19:09:32 :: main :: referer2action :: ERROR :: fail : (3, '')
+2021-05-24 19:09:32 :: main :: referer2action :: ERROR :: fail : (4, 'course_all.px')
+2021-05-24 19:09:56 :: main :: referer2action :: INFO  :: accesslog_20210413.csv start
+2021-05-24 19:10:01 :: main :: referer2action :: ERROR :: fail : (2, '')
+2021-05-24 19:10:32 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 19:11:28 :: main :: referer2action :: INFO  :: accesslog_20210414.csv start
+2021-05-24 19:12:05 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 19:12:48 :: main :: referer2action :: INFO  :: accesslog_20210415.csv start
+2021-05-24 19:13:54 :: main :: referer2action :: INFO  :: accesslog_20210416.csv start
+2021-05-24 19:14:02 :: main :: referer2action :: ERROR :: fail : (0, 'en-biotopia')
+2021-05-24 19:14:02 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_01_01.px')
+2021-05-24 19:14:57 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 19:14:58 :: main :: referer2action :: INFO  :: accesslog_20210417.csv start
+2021-05-24 19:15:54 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_02.px')
+2021-05-24 19:16:04 :: main :: referer2action :: INFO  :: accesslog_20210418.csv start
+2021-05-24 19:17:24 :: main :: referer2action :: INFO  :: accesslog_20210419.csv start
+2021-05-24 19:18:53 :: main :: referer2action :: INFO  :: accesslog_20210420.csv start
+2021-05-24 19:19:14 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 19:20:15 :: main :: referer2action :: INFO  :: accesslog_20210421.csv start
+2021-05-24 19:20:56 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 19:21:29 :: main :: referer2action :: ERROR :: fail : (3, '')
+2021-05-24 19:21:29 :: main :: referer2action :: ERROR :: fail : (4, 'course_all.px')
+2021-05-24 19:21:35 :: main :: referer2action :: INFO  :: accesslog_20210422.csv start
+2021-05-24 19:22:11 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 19:22:16 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_03_view.px')
+2021-05-24 19:22:48 :: main :: referer2action :: INFO  :: accesslog_20210423.csv start
+2021-05-24 19:22:57 :: main :: referer2action :: ERROR :: fail : (2, 'inbex.px')
+2021-05-24 19:23:08 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 19:23:45 :: main :: referer2action :: INFO  :: accesslog_20210424.csv start
+2021-05-24 19:24:38 :: main :: referer2action :: INFO  :: accesslog_20210425.csv start
+2021-05-24 19:25:25 :: main :: referer2action :: ERROR :: fail : (1, 'tour_program.px')
+2021-05-24 19:25:43 :: main :: referer2action :: INFO  :: accesslog_20210426.csv start
+2021-05-24 19:27:05 :: main :: referer2action :: INFO  :: accesslog_20210427.csv start
+2021-05-24 19:27:44 :: main :: referer2action :: ERROR :: fail : (0, 'podopackage_list.px')
+2021-05-24 19:28:32 :: main :: referer2action :: INFO  :: accesslog_20210428.csv start
+2021-05-24 19:28:48 :: main :: referer2action :: ERROR :: fail : (2, 'indexasd.px')
+2021-05-24 19:30:06 :: main :: referer2action :: INFO  :: accesslog_20210429.csv start
+2021-05-24 19:30:24 :: main :: referer2action :: ERROR :: fail : (1, 'mob%ED%8F%AC%EB%8F%84%ED%98%B8%ED%85%94ile')
+2021-05-24 19:30:36 :: main :: referer2action :: ERROR :: fail : (0, '')
+2021-05-24 19:30:36 :: main :: referer2action :: ERROR :: fail : (1, 'rec')
+2021-05-24 19:30:54 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01.px')
+2021-05-24 19:31:27 :: main :: referer2action :: INFO  :: accesslog_20210430.csv start
+2021-05-24 19:31:52 :: main :: referer2action :: ERROR :: fail : (2, 'biotopia_museum.px')
+2021-05-24 19:32:44 :: main :: referer2action :: INFO  :: accesslog_20210501.csv start
+2021-05-24 19:33:33 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 19:34:29 :: main :: referer2action :: INFO  :: accesslog_20210502.csv start
+2021-05-24 19:35:35 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 19:35:43 :: main :: referer2action :: ERROR :: fail : (1, 'moble')
+2021-05-24 19:35:44 :: main :: referer2action :: INFO  :: accesslog_20210503.csv start
+2021-05-24 19:37:15 :: main :: referer2action :: INFO  :: accesslog_20210504.csv start
+2021-05-24 19:37:34 :: main :: referer2action :: ERROR :: fail : (1, 'recruit_05_view.px')
+2021-05-24 19:37:38 :: main :: referer2action :: ERROR :: fail : (2, 'abou.px')
+2021-05-24 19:38:47 :: main :: referer2action :: INFO  :: accesslog_20210505.csv start
+2021-05-24 19:39:36 :: main :: referer2action :: ERROR :: fail : (1, 'restaurant.px')
+2021-05-24 19:39:55 :: main :: referer2action :: INFO  :: accesslog_20210506.csv start
+2021-05-24 19:40:54 :: main :: referer2action :: ERROR :: fail : (0, 'main.index.px')
+2021-05-24 19:41:17 :: main :: referer2action :: INFO  :: accesslog_20210507.csv start
+2021-05-24 19:41:36 :: main :: referer2action :: ERROR :: fail : (1, 'tour_program.px')
+2021-05-24 19:41:41 :: main :: referer2action :: ERROR :: fail : (1, 'podo_gall_ex.px')
+2021-05-24 19:42:23 :: main :: referer2action :: INFO  :: accesslog_20210508.csv start
+2021-05-24 19:43:16 :: main :: referer2action :: INFO  :: accesslog_20210509.csv start
+2021-05-24 19:44:03 :: main :: referer2action :: ERROR :: fail : (2, 'hotel_intro.px')
+2021-05-24 19:44:12 :: main :: referer2action :: ERROR :: fail : (0, 'podopackage_detail.px')
+2021-05-24 19:44:26 :: main :: referer2action :: INFO  :: accesslog_20210510.csv start
+2021-05-24 19:44:59 :: main :: referer2action :: ERROR :: fail : (1, 'about.px')
+2021-05-24 19:45:42 :: main :: referer2action :: INFO  :: accesslog_20210511.csv start
+2021-05-24 19:46:37 :: main :: referer2action :: ERROR :: fail : (2, 'index.pxbiotopia')
+2021-05-24 19:46:37 :: main :: referer2action :: ERROR :: fail : (3, 'mobile')
+2021-05-24 19:46:37 :: main :: referer2action :: ERROR :: fail : (4, 'index.px')
+2021-05-24 19:47:07 :: main :: referer2action :: INFO  :: accesslog_20210512.csv start
+2021-05-24 19:47:20 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 19:48:07 :: main :: referer2action :: INFO  :: accesslog_20210513.csv start
+2021-05-24 19:48:32 :: main :: referer2action :: ERROR :: fail : (1, '')
+2021-05-24 19:49:15 :: main :: referer2action :: INFO  :: accesslog_20210514.csv start
+2021-05-24 19:50:33 :: main :: referer2action :: INFO  :: accesslog_20210515.csv start
+2021-05-24 19:51:27 :: main :: referer2action :: INFO  :: accesslog_20210516.csv start
+2021-05-24 19:52:03 :: main :: referer2action :: ERROR :: fail : (1, 'mindex.px')
+2021-05-24 19:52:29 :: main :: referer2action :: ERROR :: fail : (2, 'podo_fac_restaurant.px')
+2021-05-24 19:52:39 :: main :: referer2action :: INFO  :: accesslog_20210517.csv start
+2021-05-24 19:52:52 :: main :: referer2action :: ERROR :: fail : (2, 'annex_room_familysuite.px')
+2021-05-24 19:53:18 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_05_06.px')
+2021-05-24 19:53:49 :: main :: referer2action :: INFO  :: accesslog_20210518.csv start
+2021-05-24 19:54:12 :: main :: referer2action :: ERROR :: fail : (1, 'reservation_guide.px')
+2021-05-24 19:54:28 :: main :: referer2action :: ERROR :: fail : (1, 'restaurant.px')
+2021-05-24 19:55:01 :: main :: referer2action :: INFO  :: accesslog_20210519.csv start
+2021-05-24 19:55:10 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 19:55:10 :: main :: referer2action :: ERROR :: fail : (0, 'hot-spring')
+2021-05-24 19:55:18 :: main :: referer2action :: ERROR :: fail : (1, 'history.px')
+2021-05-24 19:55:57 :: main :: referer2action :: INFO  :: accesslog_20210520.csv start
+2021-05-24 19:56:02 :: main :: referer2action :: ERROR :: fail : (0, 'en-podo')
+2021-05-24 19:57:01 :: main :: referer2action :: ERROR :: fail : (2, 'sub01_01_00.px')
+2021-05-24 19:57:08 :: main :: referer2action :: INFO  :: accesslog_20210521.csv start
+2021-05-24 19:57:51 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_03_01.px')
+2021-05-24 19:57:52 :: main :: referer2action :: ERROR :: fail : (2, 'notice_viewe.px')
+2021-05-24 19:58:07 :: main :: referer2action :: INFO  :: accesslog_20210522.csv start
+2021-05-24 19:58:09 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-24 19:58:52 :: main :: referer2action :: INFO  :: accesslog_20210523.csv start
+2021-05-24 19:59:56 :: main :: referer2action :: ERROR :: fail : (2, 'sub03_02_01.px')
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210117] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210118] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210119] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210120] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210121] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210122] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210123] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210124] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210125] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210126] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210127] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210128] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210129] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210130] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210131] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210201] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210202] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210203] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210204] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210205] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210206] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210207] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210208] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210209] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210210] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210211] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210212] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210213] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210214] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210215] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210216] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210217] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210218] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210219] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210220] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210221] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210222] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210223] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210224] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210225] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210226] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210227] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210228] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210301] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210302] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210303] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210304] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210305] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210306] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210307] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210308] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210309] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210310] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210311] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210312] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210313] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210314] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210315] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210316] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210317] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210318] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210319] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210320] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210321] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210322] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210323] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210324] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210325] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210326] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210327] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210328] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210329] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210330] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210331] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210401] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210402] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210403] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210404] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210405] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210406] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210407] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210408] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210409] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210410] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210411] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210412] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210413] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210414] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210415] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210416] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210417] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210418] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210419] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210420] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210421] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210422] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210423] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210424] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210425] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210426] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210427] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210428] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210429] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210430] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210501] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210502] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210503] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210504] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210505] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210506] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210507] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210508] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210509] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210510] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210511] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210512] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210513] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210514] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210515] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210516] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210517] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210518] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210519] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210520] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210521] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210522] file parsing process
+2021-05-25 09:03:58 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210523] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210117.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210118.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210119.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210120.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210121.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210122.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210123.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210124.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210125.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210126.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210127.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210128.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210129.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210130.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210131.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210201.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210202.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210203.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210204.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210205.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210206.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210207.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210208.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210209.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210210.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210211.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210212.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210213.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210214.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210215.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210216.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210217.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210218.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210219.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210220.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210221.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210222.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210223.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210224.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210225.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210226.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210227.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210228.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210301.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210302.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210303.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210304.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210305.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210306.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210307.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210308.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210309.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210310.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210311.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210312.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210313.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210314.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210315.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210316.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210317.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210318.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210319.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210320.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210321.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210322.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210323.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210324.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210325.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210326.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210327.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210328.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210329.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210330.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210331.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210401.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210402.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210403.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210404.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210405.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210406.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210407.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210408.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210409.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210410.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210411.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210412.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210413.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210414.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210415.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210416.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210417.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210418.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210419.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210420.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210421.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210422.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210423.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210424.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210425.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210426.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210427.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210428.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210429.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210430.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210501.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210502.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210503.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210504.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210505.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210506.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210507.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210508.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210509.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210510.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210511.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210512.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210513.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210514.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210515.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210516.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210517.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210518.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210519.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210520.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210521.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210522.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: already exist the parsed data. pass [accesslog_20210523.csv] file parsing process
+2021-05-25 09:04:33 :: main :: referer2action :: INFO  :: accesslog_20210524.csv start

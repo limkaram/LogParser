@@ -24,7 +24,11 @@ loggers:
         level: DEBUG
         handlers: [console, file_debug]
         propagate: False
-    handler:
+    TomcatAccesslogParser:
+        level: DEBUG
+        handlers: [console, file_debug]
+        propagate: False
+    URLparser:
         level: DEBUG
         handlers: [console, file_debug]
         propagate: False

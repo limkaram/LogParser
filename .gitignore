@@ -1,2 +1,5 @@
-/data/
+/data/javacontrollers/
+/data/raw/
 /outputs/
+/.idea/
+.DS_Store
