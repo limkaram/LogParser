@@ -247,11 +247,12 @@ class Main:
             print('')
 
     def merge_csv(self):
-        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'referer2action_dataset')
-        utils.merge_csv(root_path)
+        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
+        utils.merge_csv(root_path, filename='20210117-20210524.csv')
 
 
 if __name__ == '__main__':
     main = Main()
-    main.accesslog_parsing()
-    main.referer2action()
+    # main.accesslog_parsing()
+    # main.referer2action()
+    main.merge_csv()
