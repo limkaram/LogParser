@@ -1,4 +1,4 @@
-from src.parser import MariaDBlogParser, TomcatAccesslogParser, ControllerParser, URLparser, utils
+from src.parser import MariaDBlogParser, TomcatAccesslogParser, ControllerParser, URLparser, utils, FeatureExtractor
 from src.parser.exceptions import *
 from pprint import pprint
 import logging
@@ -21,7 +21,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 
-# TODO: logging
+# TODO: logging, 시간별 접속자 수 컬럼 추가
 
 
 class Main:
@@ -176,12 +176,10 @@ class Main:
         print('#### urls_description_df ####')
         print(urls_description_df.head(), '\n')
 
-        # os.path.join(save_path, f'referer2action_{filename.replace("accesslog_", "")}'
-
         for filename in os.listdir(files_path):
-            if f'referer2action_{filename.replace("accesslog_", "")}' in os.listdir(save_path):
-                self.logger.info(f'already exist the parsed data. pass [{filename}] file parsing process')
-                continue
+            # if f'referer2action_{filename.replace("accesslog_", "")}' in os.listdir(save_path):
+            #     self.logger.info(f'already exist the parsed data. pass [{filename}] file parsing process')
+            #     continue
             self.logger.info(f'{filename} start')
             accesslog_df = pd.read_csv(os.path.join(files_path, filename), index_col=0)
             accesslog_df = accesslog_df[['ip', 'time', 'referer']].dropna(axis=0)
@@ -198,16 +196,20 @@ class Main:
                 temp_df = temp_df.drop_duplicates()
                 temp_df = temp_df.sort_values(by='time')
                 temp_df = temp_df.drop_duplicates(['referer'])
-                first_access_time = temp_df['time'].iloc[0]
-                referers: list = temp_df.referer.values
+                first_access_time: str = temp_df['time'].iloc[0]
+                referers: list = temp_df['referer'].values
+                access_times: list = temp_df['time'].values
                 one_ip_actions: list = []
+                previous_time: str = first_access_time
 
-                for referer in referers:
+                for idx, (access_time, referer) in enumerate(zip(access_times, referers)):
                     action: str = ''
                     parser = URLparser.Parser(referer)
 
                     try:
-                        for prefix_depth, url_element in parser.url_elements.values:
+                        url_elements_info = parser.url_elements.values
+
+                        for prefix_depth, url_element in url_elements_info:
                             condition1 = (urls_description_df['prefix_depth'] == prefix_depth)
                             condition2 = (urls_description_df['url_element'] == url_element)
                             try:
@@ -216,7 +218,13 @@ class Main:
                             except IndexError:
                                 self.logger.error(f'fail : {(prefix_depth, url_element)}')
                                 continue
-                        one_ip_actions.append(action)
+
+                        if len(one_ip_actions) > 0:
+                            stay_sec = parser.get_time_difference(previous_time, access_time)
+                            one_ip_actions.append(stay_sec)
+                            previous_time = access_time
+
+                        one_ip_actions.append(action.strip())
                     except PrefixURLNotFoundError:
                         if referer in unnecessaries:
                             continue
@@ -226,8 +234,15 @@ class Main:
                             continue
                         elif referer.startswith('45ea207d7a2b68c49582d2d22adf953aads|a'):
                             continue
+                        elif 'safeframe.googlesyndication.com' in referer:
+                            continue
 
                         matched_text = re.match(r'https?:\/\/[ ]?((www\.)?[-a-zA-Z가-힣0-9@:%._\+~#=]{1,256})', referer)
+
+                        if len(one_ip_actions) > 0:
+                            stay_sec = parser.get_time_difference(previous_time, access_time)
+                            one_ip_actions.append(stay_sec)
+                            previous_time = access_time
 
                         if matched_text is not None:
                             domain = matched_text.group(1)
@@ -246,6 +261,56 @@ class Main:
                 pd.DataFrame(result).to_csv(os.path.join(save_path, f'referer2action_{filename.replace("accesslog_", "")}'), encoding='euc-kr')
             print('')
 
+    def make_user_action_info_table(self):
+        data_dirpath: str = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
+        info: dict = {'date': [],
+                      'access_users_num': [],
+                        'membership_join_num': [],
+                        'reservation_users_num': [],
+                        'action_sequence_len_min': [],
+                        'action_sequence_len_max': [],
+                        'action_sequence_len_mean': [],
+                        'action_sequence_len_median': [],
+                        'first_access_location_modest': [],
+                        'first_access_location_least': [],
+                        'departure_location_modest': [],
+                        'departure_location_least': [],
+                        'access_location_modest': [],
+                        'access_location_least': [],
+                        'stay_time_min': [],
+                        'stay_time_max': [],
+                        'stay_time_mean': [],
+                        'stay_time_median': []}
+
+        for idx, filename in enumerate(os.listdir(data_dirpath)):
+            self.logger.info(f'{filename} start')
+            filepath: str = os.path.join(data_dirpath, filename)
+            extractor = FeatureExtractor.Extractor(path=filepath)
+            info['date'].append(extractor.date)
+            info['access_users_num'].append(extractor.access_users_num)
+            info['membership_join_num'].append(extractor.membership_join_num)
+            info['reservation_users_num'].append(extractor.reservation_users_num)
+            info['action_sequence_len_min'].append(extractor.action_sequence_len_min)
+            info['action_sequence_len_max'].append(extractor.action_sequence_len_max)
+            info['action_sequence_len_mean'].append(extractor.action_sequence_len_mean)
+            info['action_sequence_len_median'].append(extractor.action_sequence_len_median)
+            info['first_access_location_modest'].append(extractor.first_access_location_modest)
+            info['first_access_location_least'].append(extractor.first_access_location_least)
+            info['departure_location_modest'].append(extractor.departure_location_modest)
+            info['departure_location_least'].append(extractor.departure_location_least)
+            info['access_location_modest'].append(extractor.access_location_modest)
+            info['access_location_least'].append(extractor.access_location_least)
+            info['stay_time_min'].append(extractor.stay_time_min)
+            info['stay_time_max'].append(extractor.stay_time_max)
+            info['stay_time_mean'].append(extractor.stay_time_mean)
+            info['stay_time_median'].append(extractor.stay_time_median)
+
+        result = pd.DataFrame(info)
+        print(result.info())
+        print('')
+        print(result.head())
+        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'referer2action_info_table_20210527.csv'), encoding='euc-kr')
+
     def merge_csv(self):
         root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
         utils.merge_csv(root_path, filename='20210117-20210524.csv')
@@ -253,6 +318,7 @@ class Main:
 
 if __name__ == '__main__':
     main = Main()
-    # main.accesslog_parsing()
-    # main.referer2action()
-    main.merge_csv()
+    main.accesslog_parsing()
+    main.referer2action()
+    main.make_user_action_info_table()
+    # main.merge_csv()

@@ -1,4 +1,5 @@
 import os
+import datetime
 import pandas as pd
 
 def merge_csv(root: str, filename: str):
@@ -12,3 +13,8 @@ def merge_csv(root: str, filename: str):
     print(df.head())
     print(df.info())
     df.to_csv(os.path.join(root, filename), encoding='euc-kr')
+
+def str2datetime(text: str):
+    return datetime.datetime.strptime(text, '%Y-%m-%d %H:%M:%S')
+
+
