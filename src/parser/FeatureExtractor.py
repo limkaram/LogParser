@@ -1,3 +1,4 @@
+from src.parser import utils
 import datetime
 import re
 import pandas as pd
@@ -27,6 +28,9 @@ class Extractor:
         return {'sequences_actions': sequences_actions_list,
                 'sequences_len': sequences_len_list,
                 'sequences_stay_time': sequences_stay_time_list}
+
+    def get_access_users_num_in_timezone(self, timezone: int) -> int:
+        return (self._df['first_access_time'].apply(lambda x: utils.str2datetime(x, only='hour')) == timezone).sum()
 
     @staticmethod
     def get_each_action_sequence_info(sequence: str) -> dict:

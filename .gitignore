@@ -1,5 +1,7 @@
+/data/
 /data/javacontrollers/
 /data/raw/
-/outputs/
+/outputs/parsed/
+/outputs/sequence/
 /.idea/
 /.DS_Store
