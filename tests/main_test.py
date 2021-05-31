@@ -148,6 +148,5 @@ class Main:
 
 if __name__ == '__main__':
     main = Main()
-    main.separate_users()
     # main.make_user_action_info_table()
     # main.merge_()

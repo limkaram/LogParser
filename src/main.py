@@ -22,7 +22,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 
-# TODO: logging, 시간별 접속자 수 컬럼 추가
+# TODO: logging, DailyAccessUserInfo stay_time threshold separated 로직 적용 필요
 
 
 class Main:
@@ -178,9 +178,9 @@ class Main:
         print(urls_description_df.head(), '\n')
 
         for filename in os.listdir(files_path):
-            # if f'referer2action_{filename.replace("accesslog_", "")}' in os.listdir(save_path):
-            #     self.logger.info(f'already exist the parsed data. pass [{filename}] file parsing process')
-            #     continue
+            if f'ActionSequence_{filename.replace("accesslog_", "")}' in os.listdir(save_path):
+                self.logger.info(f'already exist the parsed data. pass [{filename}] file parsing process')
+                continue
             self.logger.info(f'{filename} start')
             accesslog_df = pd.read_csv(os.path.join(files_path, filename), index_col=0)
             accesslog_df = accesslog_df[['ip', 'time', 'referer']].dropna(axis=0)
@@ -336,17 +336,17 @@ class Main:
         result.sort_values(by='date', ascending=True, inplace=True)
         result.reset_index(inplace=True, drop=True)
         result.to_csv(
-            os.path.join(PROJECT_ROOT_PATH, 'outputs', 'DailyAccessUserInfo', 'DailyAccessUserInfo_20210528.csv'),
+            os.path.join(PROJECT_ROOT_PATH, 'outputs', 'DailyAccessUserInfo', 'DailyAccessUserInfo_20210531.csv'),
             encoding='euc-kr')
         print(result.info(), '\n')
         print(result.head())
 
     def merge_csv(self):
         root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
-        utils.merge_csv(root_path, filename='20210117-20210524.csv')
+        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence_20201209-20210530.csv'))
 
     def separate_action_sequence_with_stay_time_threshold(self):
-        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence.csv'),
+        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence_20201209-20210530.csv'),
                                        encoding='euc-kr',
                                        index_col=0).dropna(axis=0)
 
@@ -375,9 +375,8 @@ class Main:
 
 if __name__ == '__main__':
     main = Main()
-    main.accesslog_parsing()
-    main.referer2action()
-    main.merge_csv()
-    main.separate_action_sequence_with_stay_time_threshold()
+    # main.accesslog_parsing()
+    # main.referer2action()
+    # main.merge_csv()
+    # main.separate_action_sequence_with_stay_time_threshold()
     main.make_user_action_info_table()
-
