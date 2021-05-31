@@ -1,4 +1,5 @@
 from src.parser import MariaDBlogParser, TomcatAccesslogParser, ControllerParser, URLparser, utils, FeatureExtractor
+from src.parser import SeparateUserWithStaytimeThreshold
 from src.parser.exceptions import *
 from pprint import pprint
 import logging
@@ -344,10 +345,39 @@ class Main:
         root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
         utils.merge_csv(root_path, filename='20210117-20210524.csv')
 
+    def separate_action_sequence_with_stay_time_threshold(self):
+        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence.csv'),
+                                       encoding='euc-kr',
+                                       index_col=0).dropna(axis=0)
+
+        separated_info: dict = {'user_index': [], 'first_access_time': [], 'actions': [], 'total_stay_time': []}
+        user_index: int = 0
+
+        for first_access_time, sequence in zip(df['first_access_time'], df['actions']):
+            users: dict = SeparateUserWithStaytimeThreshold.Separator(first_access_time,
+                                                                      sequence,
+                                                                      threshold=120).separated_users_info
+
+            for access_time, actions in users.items():
+                separated_info['user_index'].append(user_index)
+                separated_info['first_access_time'].append(access_time)
+                separated_info['actions'].append(' -> '.join(actions))
+                separated_info['total_stay_time'].append(utils.calculate_stay_time(actions))
+                user_index += 1
+
+        result = pd.DataFrame(separated_info)
+        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence', 'SeparatedActionSequence_20210531.csv'),
+                      encoding='euc-kr')
+        print(result.info())
+        print('')
+        print(result.head())
+
 
 if __name__ == '__main__':
     main = Main()
     main.accesslog_parsing()
     main.referer2action()
+    main.merge_csv()
+    main.separate_action_sequence_with_stay_time_threshold()
     main.make_user_action_info_table()
-    # main.merge_csv()
+

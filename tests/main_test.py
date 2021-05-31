@@ -117,7 +117,7 @@ class Main:
         dst = os.path.join(PROJECT_ROOT_PATH, 'tests', 'tmp_test.csv')
         utils.merge_csv(root, dst)
 
-    def separate_users(self):
+    def separate_action_sequence_with_stay_time_threshold(self):
         df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence.csv'),
                                        encoding='euc-kr',
                                        index_col=0).dropna(axis=0)
