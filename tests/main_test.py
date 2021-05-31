@@ -1,4 +1,10 @@
-from src.parser import MariaDBlogParser, TomcatAccesslogParser, ControllerParser, URLparser, utils, FeatureExtractor
+from src.parser import MariaDBlogParser
+from src.parser import TomcatAccesslogParser
+from src.parser import ControllerParser
+from src.parser import URLparser
+from src.parser import utils
+from src.parser import FeatureExtractor
+from src.parser import SeparateUserWithStaytimeThreshold
 from src.parser.exceptions import *
 from pprint import pprint
 import logging
@@ -106,8 +112,42 @@ class Main:
         print(result.info(), '\n')
         print(result.head())
 
+    def merge_(self):
+        root = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
+        dst = os.path.join(PROJECT_ROOT_PATH, 'tests', 'tmp_test.csv')
+        utils.merge_csv(root, dst)
+
+    def separate_users(self):
+        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence.csv'),
+                                       encoding='euc-kr',
+                                       index_col=0).dropna(axis=0)
+
+        separated_info: dict = {'user_index': [], 'first_access_time': [], 'actions': [], 'total_stay_time': []}
+        user_index: int = 0
+
+        for first_access_time, sequence in zip(df['first_access_time'], df['actions']):
+            users: dict = SeparateUserWithStaytimeThreshold.Separator(first_access_time,
+                                                                      sequence,
+                                                                      threshold=120).separated_users_info
+
+            for access_time, actions in users.items():
+                separated_info['user_index'].append(user_index)
+                separated_info['first_access_time'].append(access_time)
+                separated_info['actions'].append(' -> '.join(actions))
+                separated_info['total_stay_time'].append(utils.calculate_stay_time(actions))
+                user_index += 1
+
+        result = pd.DataFrame(separated_info)
+        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence', 'SeparatedActionSequence_20210531.csv'),
+                      encoding='euc-kr')
+        print(result.info())
+        print('')
+        print(result.head())
+
+
 
 if __name__ == '__main__':
     main = Main()
-    main.make_user_action_info_table()
-
+    main.separate_users()
+    # main.make_user_action_info_table()
+    # main.merge_()

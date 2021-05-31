@@ -1,18 +1,19 @@
 import os
+import glob
 import datetime
 import pandas as pd
+import re
 
-def merge_csv(root: str, filename: str):
+def merge_csv(root: str, dst: str):
     df = pd.DataFrame()
 
-    for f in os.listdir(root):
-        filepath = os.path.join(root, f)
-        temp_df = pd.read_csv(filepath, encoding='euc-kr', index_col=0)
-        df = pd.concat([df, temp_df])
+    for filepath in glob.glob(os.path.join(root, '*.csv')):
+        each_df = pd.read_csv(filepath, encoding='euc-kr', index_col=0)
+        df = pd.concat([df, each_df])
 
+    df.to_csv(dst, encoding='euc-kr')
     print(df.head())
     print(df.info())
-    df.to_csv(os.path.join(root, filename), encoding='euc-kr')
 
 def str2datetime(text: str, only: str=None):
     if only == 'year':
@@ -31,3 +32,18 @@ def str2datetime(text: str, only: str=None):
         return datetime.datetime.strptime(text, '%Y-%m-%d %H:%M:%S')
 
 
+def calculate_stay_time(sequence: list or str) -> int:
+    total_stay_time: int = 0
+    actions: list = []
+
+    if type(sequence) == list:
+        actions: list = sequence
+    elif type(sequence) == str:
+        actions: list = sequence.split(' -> ')
+
+    for action in actions:
+        stay_time_format = re.match(r'([0-9]+)[s]', action)
+        if stay_time_format is not None:
+            total_stay_time += int(stay_time_format.group(1))
+
+    return total_stay_time

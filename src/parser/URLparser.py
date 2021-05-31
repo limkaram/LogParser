@@ -4,6 +4,7 @@ from src.parser.exceptions import *
 from src.parser import utils
 from collections import OrderedDict
 from datetime import timedelta
+import datetime
 
 
 class Parser:
@@ -43,7 +44,4 @@ class Parser:
         convert_time_to_sec = (stay_t.hour * 3600) + (stay_t.minute * 60) + stay_t.second
 
         return str(convert_time_to_sec) + 's'
-
-
-
 

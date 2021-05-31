@@ -3,5 +3,6 @@
 /data/raw/
 /outputs/parsed/
 /outputs/sequence/
+/outputs/SeparatedSequence/
 /.idea/
 /.DS_Store
