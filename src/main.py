@@ -263,7 +263,7 @@ class Main:
             print('')
 
     def make_user_action_info_table(self):
-        data_dirpath: str = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
+        data_dirpath: str = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence')
         info: dict = {'date': [],
                       'access_users_num': [],
                       'membership_join_num': [],
@@ -282,6 +282,7 @@ class Main:
                       'stay_time_max': [],
                       'stay_time_mean': [],
                       'stay_time_median': [],
+                      'reservation_rate': [],
                       '0': [],
                       '1': [],
                       '2': [],
@@ -329,6 +330,7 @@ class Main:
             info['stay_time_max'].append(extractor.stay_time_max)
             info['stay_time_mean'].append(extractor.stay_time_mean)
             info['stay_time_median'].append(extractor.stay_time_median)
+            info['reservation_rate'].append(extractor.reservation_rate)
             for timezone in range(24):
                 info[str(timezone)].append(extractor.get_access_users_num_in_timezone(timezone=timezone))
 
@@ -336,47 +338,49 @@ class Main:
         result.sort_values(by='date', ascending=True, inplace=True)
         result.reset_index(inplace=True, drop=True)
         result.to_csv(
-            os.path.join(PROJECT_ROOT_PATH, 'outputs', 'DailyAccessUserInfo', 'DailyAccessUserInfo_20210531.csv'),
+            os.path.join(PROJECT_ROOT_PATH, 'outputs', 'DailyAccessUserInfo', 'DailyAccessUserInfo_20210601.csv'),
             encoding='euc-kr')
         print(result.info(), '\n')
         print(result.head())
 
     def merge_csv(self):
-        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
-        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence_20201209-20210530.csv'))
+        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed')
+        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'parsed_20201209-20210531.csv'))
 
     def separate_action_sequence_with_stay_time_threshold(self):
-        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence_20201209-20210530.csv'),
-                                       encoding='euc-kr',
-                                       index_col=0).dropna(axis=0)
+        for filepath in glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', '*.csv')):
+            filename: str = os.path.basename(filepath)
+            self.logger.info(f'{filename} start')
+            df: pd.DataFrame = pd.read_csv(filepath, encoding='euc-kr', index_col=0).dropna(axis=0)
 
-        separated_info: dict = {'user_index': [], 'first_access_time': [], 'actions': [], 'total_stay_time': []}
-        user_index: int = 0
+            separated_info: dict = {'user_index': [], 'first_access_time': [], 'actions': [], 'total_stay_time': []}
+            user_index: int = 0
 
-        for first_access_time, sequence in zip(df['first_access_time'], df['actions']):
-            users: dict = SeparateUserWithStaytimeThreshold.Separator(first_access_time,
-                                                                      sequence,
-                                                                      threshold=120).separated_users_info
+            for first_access_time, sequence in zip(df['first_access_time'], df['actions']):
+                users: dict = SeparateUserWithStaytimeThreshold.Separator(first_access_time,
+                                                                          sequence,
+                                                                          threshold=120).separated_users_info
 
-            for access_time, actions in users.items():
-                separated_info['user_index'].append(user_index)
-                separated_info['first_access_time'].append(access_time)
-                separated_info['actions'].append(' -> '.join(actions))
-                separated_info['total_stay_time'].append(utils.calculate_stay_time(actions))
-                user_index += 1
+                for access_time, actions in users.items():
+                    separated_info['user_index'].append(user_index)
+                    separated_info['first_access_time'].append(access_time)
+                    separated_info['actions'].append(' -> '.join(actions))
+                    separated_info['total_stay_time'].append(utils.calculate_stay_time(actions))
+                    user_index += 1
 
-        result = pd.DataFrame(separated_info)
-        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence', 'SeparatedActionSequence_20210531.csv'),
-                      encoding='euc-kr')
-        print(result.info())
-        print('')
-        print(result.head())
+            result = pd.DataFrame(separated_info)
+            result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence',
+                                       filename.replace('ActionSequence', 'SeparatedActionSequence')),
+                          encoding='euc-kr')
+            print(result.info())
+            print('')
+            print(result.head())
 
 
 if __name__ == '__main__':
     main = Main()
     # main.accesslog_parsing()
     # main.referer2action()
-    # main.merge_csv()
     # main.separate_action_sequence_with_stay_time_threshold()
-    main.make_user_action_info_table()
+    main.merge_csv()
+    # main.make_user_action_info_table()

@@ -1,6 +1,6 @@
 files_dirpath: C:\\Users\\skns\\PycharmProjects\\logparser\\outputs\\parsed
 save_dirpath: C:\\Users\\skns\\PycharmProjects\\logparser\\outputs\\sequence
-description_filepath: C:\\Users\\skns\\PycharmProjects\\logparser\\data\\URLdescription\\URLdescription_20210526.csv
+description_filepath: C:\\Users\\skns\\PycharmProjects\\logparser\\data\\URLdescription\\URLdescription_20210601.csv
 unnecessaries:
     - '-'
     - 'https://www.thepinx.co.kr/mobile/css/main.css'

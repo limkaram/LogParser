@@ -140,3 +140,9 @@ class Extractor:
     def stay_time_median(self) -> float:
         return float(np.median(self._action_sequences_info['sequences_stay_time']))
 
+    @property
+    def reservation_rate(self) -> float:
+        if self.reservation_users_num == 0:
+            return 0
+        return self.reservation_users_num / self.access_users_num
+
