@@ -3,7 +3,8 @@ from src.parser import TomcatAccesslogParser
 from src.parser import ControllerParser
 from src.parser import URLparser
 from src.parser import utils
-from src.parser import FeatureExtractor
+from src.parser import DailyInfoFeatureExtractor
+from src.parser import UserInfoFeatureExtractor
 from src.parser import SeparateUserWithStaytimeThreshold
 from src.parser.exceptions import *
 from pprint import pprint
@@ -83,7 +84,7 @@ class Main:
         for filepath in glob.glob(os.path.join(data_dirpath, '*.csv')):
             filename: str = os.path.basename(filepath)
             self.logger.info(f'{filename} start')
-            extractor = FeatureExtractor.Extractor(path=filepath)
+            extractor = DailyInfoFeatureExtractor.Extractor(path=filepath)
             info['date'].append(extractor.date)
             info['access_users_num'].append(extractor.access_users_num)
             info['membership_join_num'].append(extractor.membership_join_num)
@@ -144,9 +145,21 @@ class Main:
         print('')
         print(result.head())
 
+    def make_specific_user_info(self):
+        parsed_df = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed', 'accesslog_20210531.csv'), encoding='utf-8', index_col=0)
+        sequence_df = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', 'ActionSequence_20210531.csv'), encoding='euc-kr',
+                                index_col=0)
+
+        test_ = UserInfoFeatureExtractor.Extractor(parsed_df, sequence_df)
+        df = test_.user_specific_info_df
+        df.to_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'UserSpecificInfo.csv'), encoding='euc-kr')
+        print(df.info())
+        print('')
+        print(df.head())
 
 
 if __name__ == '__main__':
     main = Main()
     # main.make_user_action_info_table()
     # main.merge_()
+    main.make_specific_user_info()

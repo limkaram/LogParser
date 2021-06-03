@@ -1,4 +1,10 @@
-from src.parser import MariaDBlogParser, TomcatAccesslogParser, ControllerParser, URLparser, utils, FeatureExtractor
+from src.parser import MariaDBlogParser
+from src.parser import TomcatAccesslogParser
+from src.parser import ControllerParser
+from src.parser import URLparser
+from src.parser import utils
+from src.parser import DailyInfoFeatureExtractor
+from src.parser import UserInfoFeatureExtractor
 from src.parser import SeparateUserWithStaytimeThreshold
 from src.parser.exceptions import *
 from pprint import pprint
@@ -262,7 +268,7 @@ class Main:
                 pd.DataFrame(result).to_csv(os.path.join(save_path, f'ActionSequence_{filename.replace("accesslog_", "")}'), encoding='euc-kr')
             print('')
 
-    def make_user_action_info_table(self):
+    def make_daily_user_info_table(self):
         data_dirpath: str = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence')
         info: dict = {'date': [],
                       'access_users_num': [],
@@ -311,7 +317,7 @@ class Main:
         for filepath in glob.glob(os.path.join(data_dirpath, '*.csv')):
             filename: str = os.path.basename(filepath)
             self.logger.info(f'{filename} start')
-            extractor = FeatureExtractor.Extractor(path=filepath)
+            extractor = DailyInfoFeatureExtractor.Extractor(path=filepath)
             info['date'].append(extractor.date)
             info['access_users_num'].append(extractor.access_users_num)
             info['membership_join_num'].append(extractor.membership_join_num)
@@ -342,6 +348,21 @@ class Main:
             encoding='euc-kr')
         print(result.info(), '\n')
         print(result.head())
+
+    def make_specific_user_info(self):
+        parsed_data_path_ls: list = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed', '*.csv'))
+        sequence_data_path_ls: list = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', '*.csv'))
+
+        for parsed, seq in zip(parsed_data_path_ls, sequence_data_path_ls):
+            parsed_df: pd.DataFrame = pd.read_csv(parsed, encoding='utf-8', index_col=0)
+            seq_df: pd.DataFrame = pd.read_csv(seq, encoding='euc-kr', index_col=0)
+            extractor = UserInfoFeatureExtractor.Extractor(parsed_df, seq_df)
+            date: str = extractor.date
+            df: pd.DataFrame = extractor.user_specific_info_df
+            df.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SpecificUserInfo', f'UserSpecificInfo_{date}.csv'), encoding='euc-kr')
+            print(df.info())
+            print('')
+            print(df.head())
 
     def merge_csv(self):
         root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed')
@@ -382,5 +403,6 @@ if __name__ == '__main__':
     # main.accesslog_parsing()
     # main.referer2action()
     # main.separate_action_sequence_with_stay_time_threshold()
-    main.merge_csv()
-    # main.make_user_action_info_table()
+    # main.merge_csv()
+    # main.make_daily_user_info_table()
+    main.make_specific_user_info()
