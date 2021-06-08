@@ -353,7 +353,80 @@ class Main:
         parsed_data_path_ls: list = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed', '*.csv'))
         sequence_data_path_ls: list = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', '*.csv'))
 
+        pprint(os.listdir(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed')))
+
+        target_ls = ['accesslog_20210327.csv',
+                     'accesslog_20210328.csv',
+                     'accesslog_20210329.csv',
+                     'accesslog_20210330.csv',
+                     'accesslog_20210331.csv',
+                     'accesslog_20210401.csv',
+                     'accesslog_20210402.csv',
+                     'accesslog_20210403.csv',
+                     'accesslog_20210404.csv',
+                     'accesslog_20210405.csv',
+                     'accesslog_20210406.csv',
+                     'accesslog_20210407.csv',
+                     'accesslog_20210408.csv',
+                     'accesslog_20210409.csv',
+                     'accesslog_20210410.csv',
+                     'accesslog_20210411.csv',
+                     'accesslog_20210412.csv',
+                     'accesslog_20210413.csv',
+                     'accesslog_20210414.csv',
+                     'accesslog_20210415.csv',
+                     'accesslog_20210416.csv',
+                     'accesslog_20210417.csv',
+                     'accesslog_20210418.csv',
+                     'accesslog_20210419.csv',
+                     'accesslog_20210420.csv',
+                     'accesslog_20210421.csv',
+                     'accesslog_20210422.csv',
+                     'accesslog_20210423.csv',
+                     'accesslog_20210424.csv',
+                     'accesslog_20210425.csv',
+                     'accesslog_20210426.csv',
+                     'accesslog_20210427.csv',
+                     'accesslog_20210428.csv',
+                     'accesslog_20210429.csv',
+                     'accesslog_20210430.csv',
+                     'accesslog_20210501.csv',
+                     'accesslog_20210502.csv',
+                     'accesslog_20210503.csv',
+                     'accesslog_20210504.csv',
+                     'accesslog_20210505.csv',
+                     'accesslog_20210506.csv',
+                     'accesslog_20210507.csv',
+                     'accesslog_20210508.csv',
+                     'accesslog_20210509.csv',
+                     'accesslog_20210510.csv',
+                     'accesslog_20210511.csv',
+                     'accesslog_20210512.csv',
+                     'accesslog_20210513.csv',
+                     'accesslog_20210514.csv',
+                     'accesslog_20210515.csv',
+                     'accesslog_20210516.csv',
+                     'accesslog_20210517.csv',
+                     'accesslog_20210518.csv',
+                     'accesslog_20210519.csv',
+                     'accesslog_20210520.csv',
+                     'accesslog_20210521.csv',
+                     'accesslog_20210522.csv',
+                     'accesslog_20210523.csv',
+                     'accesslog_20210524.csv',
+                     'accesslog_20210525.csv',
+                     'accesslog_20210526.csv',
+                     'accesslog_20210527.csv',
+                     'accesslog_20210528.csv',
+                     'accesslog_20210529.csv',
+                     'accesslog_20210530.csv',
+                     'accesslog_20210531.csv']
+
         for parsed, seq in zip(parsed_data_path_ls, sequence_data_path_ls):
+            filename: tuple = (os.path.basename(parsed), os.path.basename(seq))
+            if filename[0] not in target_ls:
+                continue
+            self.logger.info(f'{filename} start')
             parsed_df: pd.DataFrame = pd.read_csv(parsed, encoding='utf-8', index_col=0)
             seq_df: pd.DataFrame = pd.read_csv(seq, encoding='euc-kr', index_col=0)
             extractor = UserInfoFeatureExtractor.Extractor(parsed_df, seq_df)
@@ -365,8 +438,8 @@ class Main:
             print(df.head())
 
     def merge_csv(self):
-        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed')
-        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'parsed_20201209-20210531.csv'))
+        root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SpecificUserInfo')
+        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'SpecificUserInfo_20201209-20210531.csv'))
 
     def separate_action_sequence_with_stay_time_threshold(self):
         for filepath in glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', '*.csv')):
@@ -403,6 +476,6 @@ if __name__ == '__main__':
     # main.accesslog_parsing()
     # main.referer2action()
     # main.separate_action_sequence_with_stay_time_threshold()
-    # main.merge_csv()
+    main.merge_csv()
     # main.make_daily_user_info_table()
-    main.make_specific_user_info()
+    # main.make_specific_user_info()

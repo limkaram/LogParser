@@ -12,9 +12,10 @@ from pprint import pprint
 
 class Extractor:
     def __init__(self, parsed_df: pd.DataFrame, sequence_df: pd.DataFrame):
+        # parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].str.replace('-', '0')
+        # parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].astype('int64')
+        parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].apply(lambda x: int(x) if x != '-' else 0)
         self.parsed_df: pd.DataFrame = parsed_df
-        self.parsed_df['transfer_bytes'] = self.parsed_df['transfer_bytes'].str.replace('-', '0')
-        self.parsed_df['transfer_bytes'] = self.parsed_df['transfer_bytes'].astype('int64')
         self.sequence_df: pd.DataFrame = sequence_df.dropna(axis=0).reset_index(drop=True)
         self.ip_: str = ''
         self.first_access_time_: str = ''
