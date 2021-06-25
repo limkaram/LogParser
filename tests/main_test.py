@@ -36,130 +36,70 @@ class Main:
         logging.config.dictConfig(log_config)
         self.logger = logging.getLogger('main')
 
-    def make_user_action_info_table(self):
-        data_dirpath: str = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
-        info: dict = {'date': [],
-                      'access_users_num': [],
-                      'membership_join_num': [],
-                      'reservation_users_num': [],
-                      'action_sequence_len_min': [],
-                      'action_sequence_len_max': [],
-                      'action_sequence_len_mean': [],
-                      'action_sequence_len_median': [],
-                      'first_access_location_modest': [],
-                      'first_access_location_least': [],
-                      'departure_location_modest': [],
-                      'departure_location_least': [],
-                      'access_location_modest': [],
-                      'access_location_least': [],
-                      'stay_time_min': [],
-                      'stay_time_max': [],
-                      'stay_time_mean': [],
-                      'stay_time_median': [],
-                      '0': [],
-                      '1': [],
-                      '2': [],
-                      '3': [],
-                      '4': [],
-                      '5': [],
-                      '6': [],
-                      '7': [],
-                      '8': [],
-                      '9': [],
-                      '10': [],
-                      '11': [],
-                      '12': [],
-                      '13': [],
-                      '14': [],
-                      '15': [],
-                      '16': [],
-                      '17': [],
-                      '18': [],
-                      '19': [],
-                      '20': [],
-                      '21': [],
-                      '22': [],
-                      '23': []}
+    def file_size_check(self):
+        jan_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202101*')
+        jeb_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202102*')
+        mar_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202103*')
+        apr_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202104*')
+        may_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202104*')
 
-        for filepath in glob.glob(os.path.join(data_dirpath, '*.csv')):
-            filename: str = os.path.basename(filepath)
-            self.logger.info(f'{filename} start')
-            extractor = DailyInfoFeatureExtractor.Extractor(path=filepath)
-            info['date'].append(extractor.date)
-            info['access_users_num'].append(extractor.access_users_num)
-            info['membership_join_num'].append(extractor.membership_join_num)
-            info['reservation_users_num'].append(extractor.reservation_users_num)
-            info['action_sequence_len_min'].append(extractor.action_sequence_len_min)
-            info['action_sequence_len_max'].append(extractor.action_sequence_len_max)
-            info['action_sequence_len_mean'].append(extractor.action_sequence_len_mean)
-            info['action_sequence_len_median'].append(extractor.action_sequence_len_median)
-            info['first_access_location_modest'].append(extractor.first_access_location_modest)
-            info['first_access_location_least'].append(extractor.first_access_location_least)
-            info['departure_location_modest'].append(extractor.departure_location_modest)
-            info['departure_location_least'].append(extractor.departure_location_least)
-            info['access_location_modest'].append(extractor.access_location_modest)
-            info['access_location_least'].append(extractor.access_location_least)
-            info['stay_time_min'].append(extractor.stay_time_min)
-            info['stay_time_max'].append(extractor.stay_time_max)
-            info['stay_time_mean'].append(extractor.stay_time_mean)
-            info['stay_time_median'].append(extractor.stay_time_median)
-            for timezone in range(24):
-                info[str(timezone)].append(extractor.get_access_users_num_in_timezone(timezone=timezone))
+        for month, dir_ls in enumerate([jan_dir_ls, jeb_dir_ls, mar_dir_ls, apr_dir_ls, may_dir_ls]):
+            total_file_size = 0
+            print(f'[{month+1}]')
+            for dirpath in dir_ls:
+                access_log_file_path = glob.glob(os.path.join(dirpath, '*access*'))[0]
+                access_log_file_name = os.path.basename(access_log_file_path)
+                access_log_file_size = os.path.getsize(access_log_file_path)
+                total_file_size += access_log_file_size
+                # print({'filename': access_log_file_name, 'filesize': access_log_file_size})
+            print(f'total_file_size : {total_file_size * 1e-9:.2f} GB')
+            print('')
 
-        result = pd.DataFrame(info)
-        result.sort_values(by='date', ascending=True, inplace=True)
-        result.reset_index(inplace=True, drop=True)
-        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'DailyAccessUserInfo', 'DailyAccessUserInfo_20210528.csv'), encoding='euc-kr')
-        print(result.info(), '\n')
-        print(result.head())
+    def accesslog_parsing(self):
+        self.logger.info('access log parsing start')
+        accesslog_config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
+        data_path: str = accesslog_config['accesslog_dirpath']
+        save_path: str = accesslog_config['save_dirpath']
+        print(accesslog_config['log_regex'])
 
-    def merge_(self):
-        root = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence')
-        dst = os.path.join(PROJECT_ROOT_PATH, 'tests', 'tmp_test.csv')
-        utils.merge_csv(root, dst)
+        for dirname in os.listdir(data_path):
+            save_filename: str = f'accesslog_{dirname}.csv'
+            # if save_filename in os.listdir(save_path):
+            #     self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
+            #     continue
 
-    def separate_action_sequence_with_stay_time_threshold(self):
-        df: pd.DataFrame = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'merged_sequence.csv'),
-                                       encoding='euc-kr',
-                                       index_col=0).dropna(axis=0)
+            print(f'{dirname} parsing start')
+            try:
+                filepath: str = glob.glob(os.path.join(data_path, dirname, '*access*'))[0]
+            except IndexError as e:
+                self.logger.error(e)
+                continue
+            parsed_info_ls: list = []
+            controller = TomcatAccesslogParser.Controller()
 
-        separated_info: dict = {'user_index': [], 'first_access_time': [], 'actions': [], 'total_stay_time': []}
-        user_index: int = 0
+            with open(filepath, 'rb') as f:
+                for line_num, text in enumerate(f):
+                    encoding_type = controller.get_encoding_type(text)
 
-        for first_access_time, sequence in zip(df['first_access_time'], df['actions']):
-            users: dict = SeparateUserWithStaytimeThreshold.Separator(first_access_time,
-                                                                      sequence,
-                                                                      threshold=120).separated_users_info
-
-            for access_time, actions in users.items():
-                separated_info['user_index'].append(user_index)
-                separated_info['first_access_time'].append(access_time)
-                separated_info['actions'].append(' -> '.join(actions))
-                separated_info['total_stay_time'].append(utils.calculate_stay_time(actions))
-                user_index += 1
-
-        result = pd.DataFrame(separated_info)
-        result.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SeparatedSequence', 'SeparatedActionSequence_20210531.csv'),
-                      encoding='euc-kr')
-        print(result.info())
-        print('')
-        print(result.head())
-
-    def make_specific_user_info(self):
-        parsed_df = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed', 'accesslog_20210531.csv'), encoding='utf-8', index_col=0)
-        sequence_df = pd.read_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', 'ActionSequence_20210531.csv'), encoding='euc-kr',
-                                index_col=0)
-
-        test_ = UserInfoFeatureExtractor.Extractor(parsed_df, sequence_df)
-        df = test_.user_specific_info_df
-        df.to_csv(os.path.join(PROJECT_ROOT_PATH, 'tests', 'UserSpecificInfo.csv'), encoding='euc-kr')
-        print(df.info())
-        print('')
-        print(df.head())
+                    # if encoding_type in ['Windows-1254']:
+                    #     continue
+                    print(text.decode(encoding_type))
+                    try:
+                        parsed_info: dict = controller.parsing(text.decode(encoding_type))
+                        parsed_info_ls.append(parsed_info)
+                    except UnicodeDecodeError as e:
+                        self.logger.error(f'{e} :: {dirname} :: [{line_num}, {encoding_type}, {text}]')
+                        continue
+            pprint(parsed_info_ls)
+            df = pd.DataFrame(parsed_info_ls)
+            print(df.head())
+            print(df.info())
+            df.to_csv(os.path.join(save_path, save_filename), encoding='euc-kr')
+            print('')
 
 
 if __name__ == '__main__':
     main = Main()
-    # main.make_user_action_info_table()
-    # main.merge_()
-    main.make_specific_user_info()
+    main.accesslog_parsing()
+    # main.file_size_check()
+

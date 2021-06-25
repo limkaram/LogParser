@@ -18,6 +18,7 @@ import datetime
 import re
 from collections import OrderedDict
 
+
 PROJECT_ROOT_PATH: str = os.path.abspath('..')
 LOGGER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'logger.yaml')
 ACCESSLOG_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'accesslog.yaml')
@@ -45,9 +46,11 @@ class Main:
 
         for dirname in os.listdir(data_path):
             save_filename: str = f'accesslog_{dirname}.csv'
-            if save_filename in os.listdir(save_path):
-                self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
-                continue
+            # if save_filename in os.listdir(save_path):
+            #     self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
+            #     continue
+            # if dirname != '20210122':
+            #     continue
 
             print(f'{dirname} parsing start')
             try:
@@ -55,26 +58,29 @@ class Main:
             except IndexError as e:
                 self.logger.error(e)
                 continue
-            parsed_info: list = []
+            parsed_info_ls: list = []
             controller = TomcatAccesslogParser.Controller()
 
             with open(filepath, 'rb') as f:
                 for line_num, text in enumerate(f):
                     encoding_type = controller.get_encoding_type(text)
 
-                    if encoding_type in ['Windows-1254']:
-                        continue
+                    # if encoding_type in ['Windows-1254']:
+                    #     continue
 
                     try:
-                        parsed_text: dict = controller.parsing(text.decode(encoding_type))
-                        parsed_info.append(parsed_text)
+                        parsed_info: dict = controller.parsing(text.decode(encoding_type))
+                        parsed_info_ls.append(parsed_info)
                     except UnicodeDecodeError as e:
-                        self.logger.error(f'{e} :: {dirname} :: [{line_num}, {encoding_type}, {text}]')
-                        continue
-            df = pd.DataFrame(parsed_info)
+                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text.decode(encoding_type)}]')
+                    except AttributeError as e:
+                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text.decode(encoding_type)}]')
+
+            df = pd.DataFrame(parsed_info_ls)
             print(df.head())
+            print('')
             print(df.info())
-            df.to_csv(os.path.join(save_path, save_filename))
+            df.to_csv(os.path.join(save_path, save_filename), encoding='utf-8')
             print('')
 
     def dblog_parsing(self, end_line):
@@ -473,9 +479,9 @@ class Main:
 
 if __name__ == '__main__':
     main = Main()
-    # main.accesslog_parsing()
+    main.accesslog_parsing()
     # main.referer2action()
     # main.separate_action_sequence_with_stay_time_threshold()
-    main.merge_csv()
+    # main.merge_csv()
     # main.make_daily_user_info_table()
     # main.make_specific_user_info()
