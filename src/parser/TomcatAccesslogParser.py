@@ -22,38 +22,28 @@ class Controller:
 
     @staticmethod
     def _parse_useragent_string(user_agent_string: str):
-        return parse(user_agent_string)
+        ua_info = parse(user_agent_string)
+        extracted_info: OrderedDict = OrderedDict()
+        extracted_info['os'] = ua_info.os.family
+        extracted_info['osVersion'] = ua_info.os.version_string
+        extracted_info['browser'] = ua_info.browser.family
+        extracted_info['browserVersion'] = ua_info.browser.version_string
+        extracted_info['device'] = ua_info.device.family
+        extracted_info['deviceBrand'] = ua_info.device.brand
+        extracted_info['deviceModel'] = ua_info.device.model
+        extracted_info['isMobile'] = ua_info.is_mobile or ua_info.is_tablet
+        extracted_info['isBot'] = ua_info.is_bot
+
+        return extracted_info
 
     def parsing(self, text: str) -> dict:
         regex: str = self.config['log_regex']
         parsed_info: dict = re.search(regex, text).groupdict()
         parsed_info['time'] = self._change_dateformat(parsed_info['time'])
+        detail_ua_info: dict = self._parse_useragent_string(parsed_info['agent'])
+        parsed_info.update(detail_ua_info)
+        print(parsed_info)
         return parsed_info
-        # parsed_info: OrderedDict = OrderedDict()
-        #
-        # parsed_info['ip'] = parsed_regex.group('host')
-        # parsed_info['user_id'] = parsed_regex.group(2)
-        # parsed_info['user_auth'] = parsed_regex.group(3)
-        # parsed_info['time'] = self._change_dateformat(parsed_regex.group(4))
-        # parsed_info['http_respond_code'] = parsed_regex.group(5)
-        # parsed_info['request_processing_time'] = parsed_regex.group(6)
-        # parsed_info['transfer_bytes'] = parsed_regex.group(7)
-        # parsed_info['http_start_line'] = parsed_regex.group(8)
-        # parsed_info['referer'] = parsed_regex.group(9)
-        # parsed_info['user_agent'] = parsed_regex.group(10)
-        # parsed_info['skt_client_identity'] = parsed_regex.group(11)
-        # parsed_info['wap_profile'] = parsed_regex.group(12)
-
-        # ua_info = self._parse_useragent_string(parsed_info['user_agent'])
-        # parsed_info['os'] = ua_info.os.family
-        # parsed_info['os_version'] = ua_info.os.version_string
-        # parsed_info['browser'] = ua_info.browser.family
-        # parsed_info['browser_version'] = ua_info.browser.version_string
-        # parsed_info['device'] = ua_info.device.family
-        # parsed_info['device_brand'] = ua_info.device.brand
-        # parsed_info['device_model'] = ua_info.device.model
-
-        # return parsed_info
 
     def _change_dateformat(self, text: str) -> str:
         date_regex = re.search(r'([0-9]{1,2})[\/]([A-Za-z]+)[\/]([0-9]{4})[:]([0-9]{2})[:]([0-9]{2})[:]([0-9]{2})', text)

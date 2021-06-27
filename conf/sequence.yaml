@@ -2,7 +2,7 @@ files_dirpath: C:\\Users\\skns\\PycharmProjects\\logparser\\outputs\\parsed
 save_dirpath: C:\\Users\\skns\\PycharmProjects\\logparser\\outputs\\sequence
 description_filepath: C:\\Users\\skns\\PycharmProjects\\logparser\\data\\URLdescription\\URLdescription_20210601.csv
 unnecessaries:
-    - '-'
+#    - '-'
     - 'https://www.thepinx.co.kr/mobile/css/main.css'
     - 'https://www.thepinx.co.kr/mobile/css/home.css'
     - 'https://www.thepinx.co.kr/css/main.css'
@@ -11,59 +11,59 @@ unnecessaries:
     - 'http://www.thepinx.co.kr/mobile/css/home.css'
     - 'http://www.thepinx.co.kr/css/main.css'
     - 'https://www.thepinx.co.kr/css/home.css'
-    - '1.226.66.240'
-    - 'ioQ0E'
-    - '-f'
-    - 'zqVUTOT'
-    - 'cqAkM3tR'
-    - "1'\""
-    - '@@Yxprs'
-    - '1 À§À¢%2527%2522'
-    - '\\'
-    - 'JyI='
-    - "¿'¿\""
-    - "ð''ð\"\""
-    - "845'"
-    - 'KcxDzss0'
-    - "588'"
-    - '@@LcBfs'
-    - 'qRsY5M83'
-    - '@@GjVbU'
-    - "97'"
-    - '3vCGxubw'
-    - '@@XZbse'
-    - "57'"
-    - 'kh3vPZ4Q'
-    - "966'"
-    - '@@MrSnR'
-    - 'tgFVDSqc'
-    - '@@Ggrze'
-    - "36'"
-    - 'rIrFUCTL'
-    - "535'"
-    - '@@iuiNt'
-    - 'qLBDWnzW'
-    - '@@rg64z'
-    - 'HiO635Zi'
-    - '@@IEqkZ'
-    - '5gXQJyz0'
-    - '@@VayWl'
-    - "108'"
-    - 'lBOSsnDv'
-    - '@@PoWau'
-    - "789'"
-    - 'p6W6ajaE'
-    - '@@CzD7G'
-    - "686'"
-    - 'f1LKy4uk'
-    - '@@1Bjux'
-    - "929'"
-    - 'MhhIDhj2'
-    - '@@ZXlqm'
-    - "109'"
-    - 'fdLwTEtL'
-    - '@@jdjcK'
-    - 'YowoAZX2'
-    - '@@Vnkrk'
-    - "982'"
-    - 'User-Agent'
+#    - '1.226.66.240'
+#    - 'ioQ0E'
+#    - '-f'
+#    - 'zqVUTOT'
+#    - 'cqAkM3tR'
+#    - "1'\""
+#    - '@@Yxprs'
+#    - '1 À§À¢%2527%2522'
+#    - '\\'
+#    - 'JyI='
+#    - "¿'¿\""
+#    - "ð''ð\"\""
+#    - "845'"
+#    - 'KcxDzss0'
+#    - "588'"
+#    - '@@LcBfs'
+#    - 'qRsY5M83'
+#    - '@@GjVbU'
+#    - "97'"
+#    - '3vCGxubw'
+#    - '@@XZbse'
+#    - "57'"
+#    - 'kh3vPZ4Q'
+#    - "966'"
+#    - '@@MrSnR'
+#    - 'tgFVDSqc'
+#    - '@@Ggrze'
+#    - "36'"
+#    - 'rIrFUCTL'
+#    - "535'"
+#    - '@@iuiNt'
+#    - 'qLBDWnzW'
+#    - '@@rg64z'
+#    - 'HiO635Zi'
+#    - '@@IEqkZ'
+#    - '5gXQJyz0'
+#    - '@@VayWl'
+#    - "108'"
+#    - 'lBOSsnDv'
+#    - '@@PoWau'
+#    - "789'"
+#    - 'p6W6ajaE'
+#    - '@@CzD7G'
+#    - "686'"
+#    - 'f1LKy4uk'
+#    - '@@1Bjux'
+#    - "929'"
+#    - 'MhhIDhj2'
+#    - '@@ZXlqm'
+#    - "109'"
+#    - 'fdLwTEtL'
+#    - '@@jdjcK'
+#    - 'YowoAZX2'
+#    - '@@Vnkrk'
+#    - "982'"
+#    - 'User-Agent'

@@ -25,7 +25,7 @@ class Parser:
         return self._parse()
 
     @property
-    def url_elements(self) -> OrderedDict or pd.DataFrame:
+    def url_elements(self) -> pd.DataFrame:
         _temp: OrderedDict = OrderedDict()
         _temp['prefix_depth'] = []
         _temp['url_element'] = []

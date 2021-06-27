@@ -1,4 +1,4 @@
-from src.parser import utils
+from src.parser import utils, URLparser
 from src.parser.exceptions import *
 import datetime
 from datetime import datetime
@@ -8,161 +8,205 @@ import os
 import numpy as np
 from typing import Generator
 from pprint import pprint
+import yaml
+
+PROJECT_ROOT_PATH: str = os.path.abspath('..')
+SEQUENCE_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'sequence.yaml')
 
 
 class Extractor:
-    def __init__(self, parsed_df: pd.DataFrame, sequence_df: pd.DataFrame):
-        # parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].str.replace('-', '0')
-        # parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].astype('int64')
-        parsed_df['transfer_bytes'] = parsed_df['transfer_bytes'].apply(lambda x: int(x) if x != '-' else 0)
-        self.parsed_df: pd.DataFrame = parsed_df
-        self.sequence_df: pd.DataFrame = sequence_df.dropna(axis=0).reset_index(drop=True)
-        self.ip_: str = ''
-        self.first_access_time_: str = ''
-        self.actions_: str = ''
-        self.user_specific_info: dict = {'user_index': [],
-                                         'ip': [],
-                                         'first_access_time': [],
-                                         'first_access_location': [],
-                                         'total_request_processing_time': [],
-                                         'total_transfer_bytes': [],
-                                         'user_agent': [],
+    def __init__(self, accesslog_df: pd.DataFrame, url_description_df: pd.DataFrame):
+        sequence_config: dict = yaml.load(open(SEQUENCE_CONFIG_PATH), Loader=yaml.FullLoader)
+        self.unnecessaries: list = sequence_config['unnecessaries']
+        accesslog_df['length'] = accesslog_df['length'].str.replace('-', '0').astype(np.int64)
+        self.accesslog_df: pd.DataFrame = accesslog_df
+        self.url_description_df: pd.DataFrame = url_description_df
+        self._host = None
+        self._agent = None
+        self._user_specific_info: dict = {'host': [],
+                                         'firstAccessTime': [],
+                                         'totalResponseTime': [],
+                                         'totalLength': [],
+                                         'agent': [],
                                          'os': [],
-                                         'os_version': [],
+                                         'osVersion': [],
                                          'browser': [],
-                                         'browser_version': [],
+                                         'browserVersion': [],
                                          'device': [],
-                                         'device_brand': [],
-                                         'device_model': [],
-                                         'total_stay_time': [],
+                                         'deviceBrand': [],
+                                         'deviceModel': [],
+                                         'isMobile': [],
+                                         'isBot': [],
+                                         'firstAccessLocation': [],
+                                         'totalStayTime': [],
                                          'reservation': [],
                                          'cancel': [],
-                                         'actions': [],
-                                         }
+                                         'actionSequence': []}
+
+    @property
+    def _get_user_classifying_elements(self) -> np.ndarray:
+        return self.accesslog_df.groupby(by=['host', 'agent'], as_index=False)['userID'].count()[['host', 'agent']].values
+
+    @property
+    def _condition(self) -> bool:
+        return (self.accesslog_df['host'] == self.host_) & (self.accesslog_df['agent'] == self.agent_)
 
     def _get_each_user_info(self):
-        for idx, (ip, first_access_time, actions) in enumerate(zip(self.ip, self.first_access_time, self.actions)):
-            self.ip_ = ip
-            self.first_access_time_ = first_access_time
-            self.actions_ = actions
-
-            self.user_specific_info['user_index'].append(idx)
-            self.user_specific_info['ip'].append(self.ip_)
-            self.user_specific_info['first_access_time'].append(self.first_access_time_)
-            self.user_specific_info['first_access_location'].append(self.first_access_location)
-            self.user_specific_info['total_request_processing_time'].append(self.total_request_processing_time)
-            self.user_specific_info['total_transfer_bytes'].append(self.total_transfer_bytes)
-            self.user_specific_info['user_agent'].append(self.user_agent)
-            self.user_specific_info['os'].append(self.os)
-            self.user_specific_info['os_version'].append(self.os_version)
-            self.user_specific_info['browser'].append(self.browser)
-            self.user_specific_info['browser_version'].append(self.browser_version)
-            self.user_specific_info['device'].append(self.device)
-            self.user_specific_info['device_brand'].append(self.device_brand)
-            self.user_specific_info['device_model'].append(self.device_model)
-            self.user_specific_info['total_stay_time'].append(self.total_stay_time)
-            self.user_specific_info['reservation'].append(self.reservation)
-            self.user_specific_info['cancel'].append(self.cancel)
-            self.user_specific_info['actions'].append(self.actions_)
+        for host, agent in self._get_user_classifying_elements:
+            self.host_ = host
+            self.agent_ = agent
+            self.user_df = self.accesslog_df.loc[self._condition]
+            self._user_specific_info['host'].append(self.host)
+            self._user_specific_info['firstAccessTime'].append(self.first_access_time)
+            self._user_specific_info['totalResponseTime'].append(self.total_response_time)
+            self._user_specific_info['totalLength'].append(self.total_transfer_bytes)
+            self._user_specific_info['agent'].append(self.user_agent)
+            self._user_specific_info['os'].append(self.os)
+            self._user_specific_info['osVersion'].append(self.os_version)
+            self._user_specific_info['browser'].append(self.browser)
+            self._user_specific_info['browserVersion'].append(self.browser_version)
+            self._user_specific_info['device'].append(self.device)
+            self._user_specific_info['deviceBrand'].append(self.device_brand)
+            self._user_specific_info['deviceModel'].append(self.device_model)
+            self._user_specific_info['isMobile'].append(self.is_mobile)
+            self._user_specific_info['isBot'].append(self.is_bot)
+            self._user_specific_info['firstAccessLocation'].append(self.first_access_location)
+            self._user_specific_info['totalStayTime'].append(self.total_stay_time)
+            self._user_specific_info['reservation'].append(self.reservation)
+            self._user_specific_info['cancel'].append(self.cancel)
+            self._user_specific_info['actionSequence'].append(self.action_sequence)
 
     @property
     def user_specific_info_df(self) -> pd.DataFrame:
         self._get_each_user_info()
 
-        return pd.DataFrame(self.user_specific_info)
+        return pd.DataFrame(self._user_specific_info)
 
     @property
-    def date(self) -> str:
-        before_time_format: str = '%Y-%m-%d %H:%M:%S'
-        after_time_format: str = '%Y%m%d'
-        p_date = datetime.strptime(self.parsed_df['time'].loc[0], before_time_format).strftime(after_time_format)
-        s_date = datetime.strptime(self.sequence_df['first_access_time'].loc[0], before_time_format).strftime(after_time_format)
-
-        if p_date != s_date:
-            raise TwoDataFrameNotSameDateError(f'Two df are not same date')
-
-        return s_date
+    def host(self):
+        return self.host_
 
     @property
-    def ip(self) -> Generator[str, None, None]:
-        for ip in self.sequence_df['ip']:
-            yield ip
+    def first_access_time(self):
+        return self.user_df['time'].iloc[0]
 
     @property
-    def first_access_time(self) -> Generator[str, None, None]:
-        for time in self.sequence_df['first_access_time']:
-            yield time
-
-    @property
-    def actions(self) -> Generator[str, None, None]:
-        for actions in self.sequence_df['actions']:
-            yield actions
-
-    @property
-    def _condition(self):
-        return (self.parsed_df['ip'] == self.ip_) & (self.parsed_df['time'] == self.first_access_time_)
-
-    @property
-    def first_access_location(self) -> str:
-        return self.actions_.split(' -> ')[0]
-
-    @property
-    def total_request_processing_time(self) -> int:
-        return sum(self.parsed_df.loc[self.parsed_df['ip'] == self.ip_, 'request_processing_time'])
+    def total_response_time(self) -> int:
+        return self.user_df['responseTime'].sum()
 
     @property
     def total_transfer_bytes(self) -> int:
-        return sum(self.parsed_df.loc[self.parsed_df['ip'] == self.ip_, 'transfer_bytes'])
+        return self.user_df['length'].sum()
 
     @property
     def user_agent(self) -> str:
-        return self.parsed_df.loc[self._condition, 'user_agent'].iloc[0]
+        return self.agent_
 
     @property
     def os(self) -> str:
-        return self.parsed_df.loc[self._condition, 'os'].iloc[0]
+        return self.user_df['os'].iloc[0]
 
     @property
     def os_version(self) -> str:
-        return self.parsed_df.loc[self._condition, 'os_version'].iloc[0]
+        return self.user_df['osVersion'].iloc[0]
 
     @property
     def browser(self) -> str:
-        return self.parsed_df.loc[self._condition, 'browser'].iloc[0]
+        return self.user_df['browser'].iloc[0]
 
     @property
     def browser_version(self) -> str:
-        return self.parsed_df.loc[self._condition, 'browser_version'].iloc[0]
+        return self.user_df['browserVersion'].iloc[0]
 
     @property
     def device(self) -> str:
-        return self.parsed_df.loc[self._condition, 'device'].iloc[0]
+        return self.user_df['device'].iloc[0]
 
     @property
     def device_brand(self) -> str:
-        return self.parsed_df.loc[self._condition, 'device_brand'].iloc[0]
+        return self.user_df['deviceBrand'].iloc[0]
 
     @property
     def device_model(self) -> str:
-        return self.parsed_df.loc[self._condition, 'device_model'].iloc[0]
+        return self.user_df['deviceModel'].iloc[0]
+
+    @property
+    def is_mobile(self) -> bool:
+        return self.user_df['isMobile'].iloc[0]
+
+    @property
+    def is_bot(self) -> bool:
+        return self.user_df['isBot'].iloc[0]
 
     @property
     def total_stay_time(self) -> int:
-        return sum(map(int, re.findall(r'([0-9]+)[s]', self.actions_)))
+        return sum(map(int, re.findall(r'([0-9]+)[s]', self.action_sequence)))
 
     @property
-    def reservation(self) -> int:
-        if ('예약 결제' in self.actions_) or ('예약 완료' in self.actions_):
-            return 1
+    def action_sequence(self) -> str:
+        if len(self.user_df['referer'].unique()) == 1 and self.user_df['referer'].unique()[0] == '-':
+            return '-'
 
-        return 0
+        temp_df = self.user_df[['time', 'referer']]
+        temp_df = temp_df.drop_duplicates()
+        temp_df = temp_df.sort_values(by='time')
+        one_user_actions: list = []
+        previous_time: str = self.first_access_time
+
+        for access_time, referer in zip(temp_df['time'], temp_df['referer']):
+            action: str = ''
+            parser = URLparser.Parser(referer)
+
+            try:
+                url_elements_info = parser.url_elements.values
+
+                for prefix_depth, url_element in url_elements_info:
+                    condition1 = (self.url_description_df['prefix_depth'] == prefix_depth)
+                    condition2 = (self.url_description_df['url_element'] == url_element)
+                    try:
+                        action += self.url_description_df['description'].loc[condition1 & condition2].values[0] + ' '
+                    except IndexError as e:
+                        raise IndexError(f'{e} :: fail : {(prefix_depth, url_element)}')
+
+                if len(one_user_actions) > 0:
+                    stay_sec = parser.get_time_difference(previous_time, access_time)
+                    one_user_actions.append(stay_sec)
+                    previous_time = access_time
+
+                one_user_actions.append(action.strip())
+            except PrefixURLNotFoundError:
+                if referer in self.unnecessaries:
+                    continue
+
+                if len(one_user_actions) > 0:
+                    stay_sec = parser.get_time_difference(previous_time, access_time)
+                    one_user_actions.append(stay_sec)
+                    previous_time = access_time
+
+                one_user_actions.append(referer)
+            # except TypeError as e:
+            #     print(f'!ERROR :: {e}')
+        return ' -> '.join(one_user_actions)
 
     @property
+    def first_access_location(self) -> str:
+        return self.action_sequence.split(' -> ')[0]
+
+    @property
+    # TODO : 확실히 예약 완료 혹은 결제가 된 .px 파라미터를 재확인하고, 적용할 필요가 있음
+    def reservation(self) -> bool:
+        if ('예약 결제' in self.action_sequence) or ('예약 완료' in self.action_sequence):
+            return True
+
+        return False
+
+    @property
+    # TODO : 확실히 취소를 했다는 보장이 되는 .px 파라미터를 재확인하고, 적용할 필요가 있음
     def cancel(self) -> int:
-        if '예약취소' in self.actions_:
-            return 1
+        if '예약취소' in self.action_sequence:
+            return True
 
-        return 0
+        return False
 
 
 
