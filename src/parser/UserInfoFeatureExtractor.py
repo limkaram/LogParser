@@ -9,16 +9,24 @@ import numpy as np
 from typing import Generator
 from pprint import pprint
 import yaml
+import logging
+import logging.config
 
 PROJECT_ROOT_PATH: str = os.path.abspath('..')
-SEQUENCE_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'sequence.yaml')
+USERINFO_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'userinfo.yaml')
+LOGGER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'logger.yaml')
 
 
 class Extractor:
     def __init__(self, accesslog_df: pd.DataFrame, url_description_df: pd.DataFrame):
-        sequence_config: dict = yaml.load(open(SEQUENCE_CONFIG_PATH), Loader=yaml.FullLoader)
-        self.unnecessaries: list = sequence_config['unnecessaries']
-        accesslog_df['length'] = accesslog_df['length'].str.replace('-', '0').astype(np.int64)
+        log_config: dict = yaml.load(open(LOGGER_CONFIG_PATH), Loader=yaml.FullLoader)
+        logging.config.dictConfig(log_config)
+        self.logger = logging.getLogger('UserInfoFeatrueExtractor')
+        userinfo_config: dict = yaml.load(open(USERINFO_CONFIG_PATH, encoding='utf-8'), Loader=yaml.FullLoader)
+        self.unnecessaries: list = userinfo_config['unnecessaries']
+        accesslog_df['length'] = pd.to_numeric(accesslog_df['length'].str.replace('-', '0'),
+                                               errors='coerce',
+                                               downcast='integer')
         self.accesslog_df: pd.DataFrame = accesslog_df
         self.url_description_df: pd.DataFrame = url_description_df
         self._host = None
@@ -37,7 +45,6 @@ class Extractor:
                                          'deviceModel': [],
                                          'isMobile': [],
                                          'isBot': [],
-                                         'firstAccessLocation': [],
                                          'totalStayTime': [],
                                          'reservation': [],
                                          'cancel': [],
@@ -52,7 +59,7 @@ class Extractor:
         return (self.accesslog_df['host'] == self.host_) & (self.accesslog_df['agent'] == self.agent_)
 
     def _get_each_user_info(self):
-        for host, agent in self._get_user_classifying_elements:
+        for idx, (host, agent) in enumerate(self._get_user_classifying_elements):
             self.host_ = host
             self.agent_ = agent
             self.user_df = self.accesslog_df.loc[self._condition]
@@ -70,7 +77,6 @@ class Extractor:
             self._user_specific_info['deviceModel'].append(self.device_model)
             self._user_specific_info['isMobile'].append(self.is_mobile)
             self._user_specific_info['isBot'].append(self.is_bot)
-            self._user_specific_info['firstAccessLocation'].append(self.first_access_location)
             self._user_specific_info['totalStayTime'].append(self.total_stay_time)
             self._user_specific_info['reservation'].append(self.reservation)
             self._user_specific_info['cancel'].append(self.cancel)
@@ -154,6 +160,7 @@ class Extractor:
         previous_time: str = self.first_access_time
 
         for access_time, referer in zip(temp_df['time'], temp_df['referer']):
+            print(access_time, referer)
             action: str = ''
             parser = URLparser.Parser(referer)
 
@@ -166,7 +173,9 @@ class Extractor:
                     try:
                         action += self.url_description_df['description'].loc[condition1 & condition2].values[0] + ' '
                     except IndexError as e:
-                        raise IndexError(f'{e} :: fail : {(prefix_depth, url_element)}')
+                        self.logger.error(f'{e} :: fail : {(prefix_depth, url_element)}')
+                        action += '[UNK]'
+                        continue
 
                 if len(one_user_actions) > 0:
                     stay_sec = parser.get_time_difference(previous_time, access_time)
@@ -184,24 +193,18 @@ class Extractor:
                     previous_time = access_time
 
                 one_user_actions.append(referer)
-            # except TypeError as e:
-            #     print(f'!ERROR :: {e}')
+            except TypeError as e:
+                print(f'!ERROR :: {e} :: referer {referer}')
         return ' -> '.join(one_user_actions)
 
     @property
-    def first_access_location(self) -> str:
-        return self.action_sequence.split(' -> ')[0]
-
-    @property
-    # TODO : 확실히 예약 완료 혹은 결제가 된 .px 파라미터를 재확인하고, 적용할 필요가 있음
     def reservation(self) -> bool:
-        if ('예약 결제' in self.action_sequence) or ('예약 완료' in self.action_sequence):
+        if '객실예약 완료' in self.action_sequence:
             return True
 
         return False
 
     @property
-    # TODO : 확실히 취소를 했다는 보장이 되는 .px 파라미터를 재확인하고, 적용할 필요가 있음
     def cancel(self) -> int:
         if '예약취소' in self.action_sequence:
             return True

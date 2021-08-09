@@ -16,6 +16,7 @@ import os
 import glob
 import datetime
 import re
+import pickle
 from collections import OrderedDict
 
 
@@ -23,7 +24,7 @@ PROJECT_ROOT_PATH: str = os.path.abspath('..')
 LOGGER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'logger.yaml')
 ACCESSLOG_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'accesslog.yaml')
 DBLOG_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'dblog.yaml')
-REFERER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'sequence.yaml')
+USERINFO_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'userinfo.yaml')
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -46,10 +47,11 @@ class Main:
 
         for dirname in os.listdir(data_path):
             save_filename: str = f'accesslog_{dirname}.csv'
-            # if save_filename in os.listdir(save_path):
-            #     self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
-            #     continue
-            # if dirname != '20210416':
+            if save_filename in os.listdir(save_path):
+                self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
+                continue
+            # date_range = pd.date_range(start='20210115', end='20210629').strftime("%Y%m%d").tolist()
+            # if dirname not in date_range:
             #     continue
 
             print(f'{dirname} parsing start')
@@ -69,9 +71,11 @@ class Main:
                         parsed_info: dict = controller.parsing(text.decode(encoding_type))
                         parsed_info_ls.append(parsed_info)
                     except UnicodeDecodeError as e:
-                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text.decode(encoding_type)}]')
+                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text}]')
+                        continue
                     except AttributeError as e:
-                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text.decode(encoding_type)}]')
+                        self.logger.error(f'{e} :: {dirname} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text}]')
+                        continue
 
             df = pd.DataFrame(parsed_info_ls)
             print(df.head())
@@ -353,32 +357,56 @@ class Main:
         print(result.head())
 
     def make_specific_user_info(self):
-        accesslog_config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
-        url_description_df: pd.DataFrame = pd.read_csv(accesslog_config['URLdescription_path'], index_col=0, encoding='euc-kr')
-        parsed_data_path_ls: list = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'parsed', '*.csv'))
-
-        __test_filename = 'accesslog_20210313.csv'
+        userinfo_config: dict = yaml.load(open(USERINFO_CONFIG_PATH, encoding='utf-8'), Loader=yaml.FullLoader)
+        url_description_df: pd.DataFrame = pd.read_csv(userinfo_config['URLdescription_path'], index_col=0, encoding='euc-kr')
+        data_path: str = userinfo_config['files_dirpath']
+        save_path: str = userinfo_config['save_dirpath']
+        parsed_data_path_ls: list = glob.glob(os.path.join(data_path, '*.csv'))
 
         for filepath in parsed_data_path_ls:
             filename: str = os.path.basename(filepath)
-            if filename != __test_filename:
+            date: str = filename[10:18]
+            # if date != '20210326':
+            #     continue
+            date_ls = pd.date_range(start='20210201', end='20210630').strftime('%Y%m%d').tolist()
+            if date not in date_ls:
                 continue
             self.logger.info(f'{filename} start')
-            df = pd.read_csv(filepath, index_col=0)
-
-            extractor = UserInfoFeatureExtractor.Extractor(accesslog_df=df, url_description_df=url_description_df)
-            extractor.user_specific_info_df.to_csv(
-                os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SpecificUserInfo', __test_filename),
-                index=False, encoding='euc-kr')
-
-        #     df.to_csv(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SpecificUserInfo', f'UserSpecificInfo_{date}.csv'), encoding='euc-kr')
-        #     print(df.info())
-        #     print('')
-        #     print(df.head())
+            dtype_dict: dict = {'host': str,
+                                'userID': str,
+                                'userAuth': str,
+                                'time': str,
+                                'result': int,
+                                'responseTime': int,
+                                'length': str,
+                                'method': str,
+                                'path': str,
+                                'protocol': str,
+                                'referer': str,
+                                'agent': str,
+                                'clientIdentity': str,
+                                'wapProfile': str,
+                                'os': str,
+                                'osVersion': str,
+                                'browser': str,
+                                'browserVersion': str,
+                                'device': str,
+                                'deviceBrand': str,
+                                'deviceModel': str,
+                                'isMobile': bool,
+                                'isBot': bool}
+            parsed_df = pd.read_csv(filepath, index_col=0, dtype=dtype_dict)
+            extractor = UserInfoFeatureExtractor.Extractor(accesslog_df=parsed_df, url_description_df=url_description_df)
+            userinfo_df = extractor.user_specific_info_df
+            userinfo_df.to_csv(
+                os.path.join(save_path, f'SpecificUserInfo_{date}.csv'), index=False)
+            print(userinfo_df.info())
+            print('')
+            print(userinfo_df.head())
 
     def merge_csv(self):
         root_path = os.path.join(PROJECT_ROOT_PATH, 'outputs', 'SpecificUserInfo')
-        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'SpecificUserInfo_20201209-20210531.csv'))
+        utils.merge_csv(root_path, dst=os.path.join(PROJECT_ROOT_PATH, 'tests', 'SpecificUserInfo_20210201-20210630.csv'))
 
     def separate_action_sequence_with_stay_time_threshold(self):
         for filepath in glob.glob(os.path.join(PROJECT_ROOT_PATH, 'outputs', 'sequence', '*.csv')):
@@ -413,8 +441,7 @@ class Main:
 if __name__ == '__main__':
     main = Main()
     # main.accesslog_parsing()
-    # main.referer2action()
+    # main.make_specific_user_info()
+    main.merge_csv()
     # main.separate_action_sequence_with_stay_time_threshold()
-    # main.merge_csv()
-    # main.make_daily_user_info_table()
-    main.make_specific_user_info()
+

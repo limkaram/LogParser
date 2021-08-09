@@ -5,13 +5,32 @@ import pandas as pd
 import re
 
 def merge_csv(root: str, dst: str):
+    dtype_dict: dict = {'host': str,
+                        'firstAccessTime': str,
+                        'totalResponseTime': int,
+                        'totalLength': int,
+                        'agent': str,
+                        'os': str,
+                        'osVersion': str,
+                        'browser': str,
+                        'browserVersion': str,
+                        'device': str,
+                        'deviceBrand': str,
+                        'deviceModel': str,
+                        'isMobile': bool,
+                        'isBot': bool,
+                        'totalStayTime': int,
+                        'reservation': bool,
+                        'cancel': bool,
+                        'actionSequence': str}
+
     df = pd.DataFrame()
 
     for filepath in glob.glob(os.path.join(root, '*.csv')):
-        each_df = pd.read_csv(filepath, encoding='euc-kr', index_col=0)
+        each_df = pd.read_csv(filepath, dtype=dtype_dict)
         df = pd.concat([df, each_df])
 
-    df.to_csv(dst, encoding='euc-kr')
+    df.to_csv(dst, index=False)
     print(df.head())
     print(df.info())
 

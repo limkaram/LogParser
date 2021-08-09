@@ -14,6 +14,7 @@ import pandas as pd
 import yaml
 import os
 import glob
+import time
 import datetime
 from datetime import timedelta
 import re
@@ -23,7 +24,7 @@ PROJECT_ROOT_PATH: str = os.path.abspath('..')
 LOGGER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'logger.yaml')
 ACCESSLOG_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'accesslog.yaml')
 DBLOG_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'dblog.yaml')
-REFERER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'sequence.yaml')
+REFERER_CONFIG_PATH: str = os.path.join(PROJECT_ROOT_PATH, 'conf', 'userinfo.yaml')
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -36,70 +37,84 @@ class Main:
         logging.config.dictConfig(log_config)
         self.logger = logging.getLogger('main')
 
-    def file_size_check(self):
-        jan_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202101*')
-        jeb_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202102*')
-        mar_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202103*')
-        apr_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202104*')
-        may_dir_ls = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\202104*')
-
-        for month, dir_ls in enumerate([jan_dir_ls, jeb_dir_ls, mar_dir_ls, apr_dir_ls, may_dir_ls]):
-            total_file_size = 0
-            print(f'[{month+1}]')
-            for dirpath in dir_ls:
-                access_log_file_path = glob.glob(os.path.join(dirpath, '*access*'))[0]
-                access_log_file_name = os.path.basename(access_log_file_path)
-                access_log_file_size = os.path.getsize(access_log_file_path)
-                total_file_size += access_log_file_size
-                # print({'filename': access_log_file_name, 'filesize': access_log_file_size})
-            print(f'total_file_size : {total_file_size * 1e-9:.2f} GB')
-            print('')
-
     def accesslog_parsing(self):
-        self.logger.info('access log parsing start')
-        accesslog_config: dict = yaml.load(open(ACCESSLOG_CONFIG_PATH), Loader=yaml.FullLoader)
-        data_path: str = accesslog_config['accesslog_dirpath']
-        save_path: str = accesslog_config['save_dirpath']
-        print(accesslog_config['log_regex'])
+        filepath = glob.glob('C:\\Users\\skns\\LogCollector\\logcollector_v2.0\\data\\PINX\\20210629\\*access*')[0]
+        # filepath: str = glob.glob(os.path.join(PROJECT_ROOT_PATH, 'tests', '*test_utf8*'))[0]
+        parsed_info_ls: list = []
+        controller = TomcatAccesslogParser.Controller()
 
-        for dirname in os.listdir(data_path):
-            save_filename: str = f'accesslog_{dirname}.csv'
-            # if save_filename in os.listdir(save_path):
-            #     self.logger.info(f'already exist the parsed data. pass [{dirname}] file parsing process')
-            #     continue
+        # s_t = time.time()
+        # with open(filepath) as f:
+        #     for line_num, text in enumerate(f):
+        #         try:
+        #             parsed_info: dict = controller.parsing(text)
+        #             parsed_info_ls.append(parsed_info)
+        #         except UnicodeDecodeError as e:
+        #             self.logger.error(
+        #                 f'{e} :: [line_num : {line_num} / text : {text}]')
+        #         except AttributeError as e:
+        #             self.logger.error(
+        #                 f'{e} :: [line_num : {line_num} / text : {text}]')
+        # e_t = time.time()
+        # total_t1 = e_t - s_t
 
-            print(f'{dirname} parsing start')
-            try:
-                filepath: str = glob.glob(os.path.join(data_path, dirname, '*access*'))[0]
-            except IndexError as e:
-                self.logger.error(e)
-                continue
-            parsed_info_ls: list = []
-            controller = TomcatAccesslogParser.Controller()
+        s_t = time.time()
+        with open(filepath, 'rb') as f:
+            for line_num, text in enumerate(f):
+                encoding_type = controller.get_encoding_type(text)
 
-            with open(filepath, 'rb') as f:
-                for line_num, text in enumerate(f):
-                    encoding_type = controller.get_encoding_type(text)
+                try:
+                    parsed_info: dict = controller.parsing(text.decode(encoding_type))
+                    parsed_info_ls.append(parsed_info)
+                except UnicodeDecodeError as e:
+                    self.logger.error(
+                        f'{e} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text}]')
+                except AttributeError as e:
+                    self.logger.error(
+                        f'{e} :: [line_num : {line_num} / encoding : {encoding_type} / text : {text}]')
+        e_t = time.time()
+        total_t2 = e_t - s_t
+        print(f'line check : {total_t2}')
 
-                    # if encoding_type in ['Windows-1254']:
-                    #     continue
-                    print(text.decode(encoding_type))
-                    try:
-                        parsed_info: dict = controller.parsing(text.decode(encoding_type))
-                        parsed_info_ls.append(parsed_info)
-                    except UnicodeDecodeError as e:
-                        self.logger.error(f'{e} :: {dirname} :: [{line_num}, {encoding_type}, {text}]')
-                        continue
-            pprint(parsed_info_ls)
-            df = pd.DataFrame(parsed_info_ls)
-            print(df.head())
-            print(df.info())
-            df.to_csv(os.path.join(save_path, save_filename), encoding='euc-kr')
-            print('')
+        # df = pd.DataFrame(parsed_info_ls)
+        # print(df.head())
+        # print('')
+        # print(df.info())
+        # print('')
+
+    def temp(self):
+        columns_name = {'host': 'ip',
+                         'firstAccessTime': 'first_access_time',
+                         'totalResponseTime': 'total_request_processing_time',
+                         'totalLength': 'total_transfer_bytes',
+                         'agent': 'user_agent',
+                         'os': 'os',
+                         'osVersion': 'os_version',
+                         'browser': 'browser',
+                         'browserVersion': 'browser_version',
+                         'device': 'device',
+                         'deviceBrand': 'device_brand',
+                         'deviceModel': 'device_model',
+                         'isMobile': 'is_mobile',
+                         'isBot': 'is_bot',
+                         'totalStayTime': 'total_stay_time',
+                         'reservation': 'reservation',
+                         'cancel': 'cancel',
+                         'actionSequence': 'actions'}
+
+        df = pd.read_csv(r'C:\Users\skns\PycharmProjects\logparser\tests\SpecificUserInfo_20210201-20210630.csv')
+        df = df.drop(columns=[i for i in df.columns if i.startswith('Unnamed')])
+        df = df.rename(columns=columns_name)
+        df.to_csv(r'C:\Users\skns\PycharmProjects\logparser\tests\SpecificUserInfo_20210201-20210630.csv', index=False)
+        df = pd.read_csv(r'C:\Users\skns\PycharmProjects\logparser\tests\SpecificUserInfo_20210201-20210630.csv')
+        print(df.info())
+        print('')
+        print(df.head())
 
 
 if __name__ == '__main__':
     main = Main()
-    main.accesslog_parsing()
+    # main.accesslog_parsing()
+    main.temp()
     # main.file_size_check()
 

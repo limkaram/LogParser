@@ -1,0 +1,13 @@
+files_dirpath: C:\Users\skns\PycharmProjects\logparser\outputs\parsed
+save_dirpath: C:\Users\skns\PycharmProjects\logparser\outputs\SpecificUserInfo
+URLdescription_path: C:\Users\skns\PycharmProjects\logparser\data\URLdescription\URLdescription_20210630.csv
+#URLdescription_path: /Users/limkaram/PycharmProjects/logparser/data/URLdescription/URLdescription_20210630.csv
+unnecessaries:
+    - 'https://www.thepinx.co.kr/mobile/css/main.css'
+    - 'https://www.thepinx.co.kr/mobile/css/home.css'
+    - 'https://www.thepinx.co.kr/css/main.css'
+    - 'https://www.thepinx.co.kr/css/home.css'
+    - 'http://www.thepinx.co.kr/mobile/css/main.css'
+    - 'http://www.thepinx.co.kr/mobile/css/home.css'
+    - 'http://www.thepinx.co.kr/css/main.css'
+    - 'https://www.thepinx.co.kr/css/home.css'

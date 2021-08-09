@@ -34,5 +34,5 @@ loggers:
         propagate: False
     UserInfoFeatrueExtractor:
         level: DEBUG
-        handlers: [ console, file_debug ]
+        handlers: [console, file_debug]
         propagate: False

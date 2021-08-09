@@ -42,7 +42,7 @@ class Controller:
         parsed_info['time'] = self._change_dateformat(parsed_info['time'])
         detail_ua_info: dict = self._parse_useragent_string(parsed_info['agent'])
         parsed_info.update(detail_ua_info)
-        print(parsed_info)
+
         return parsed_info
 
     def _change_dateformat(self, text: str) -> str:
