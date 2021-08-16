@@ -1,4 +1,5 @@
-# logparser
+# LogParser
+LogCollector를 통해 수집된 로그 파일 집계 테이블화
 
 ### 개발기간
     2021.03 ~ 2021.05(2개월)   
